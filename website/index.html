@@ -6,172 +6,233 @@
 <title>麵魂 MIAN-HUN｜台灣拉麵指南</title>
 <meta name="description" content="台灣最完整拉麵推薦引擎。262家詳細驗證店家、拉麵知識百科、客製化推薦。">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=Shippori+Mincho:wght@400;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+TC:wght@400;500;700;900&family=Shippori+Mincho:wght@400;700;800&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#F8F3EC;--bg2:#F0E8DC;--ink:#2B2118;--ink2:#6B5E52;--ink3:#A89888;--acc:#D94F30;--acc2:#FF6B45;--acc3:#B83D22;--gold:#C8963E;--card:rgba(255,252,248,.88);--brd:rgba(200,180,160,.22);--sh:0 8px 32px rgba(43,33,24,.08);--r:14px;--pill:999px;--f1:'Shippori Mincho','Noto Sans TC',serif;--f2:'Noto Sans TC',sans-serif}
+:root{--bg:#FDFBF7;--bg2:#F6F0E6;--ink:#1F1813;--ink2:#5D524A;--ink3:#9F9387;--acc:#E3502C;--acc2:#FF704D;--acc3:#C24021;--gold:#D29D38;--card:rgba(255,255,255,.25);--card-hover:rgba(255,255,255,.45);--brd:rgba(230,215,200,.4);--brd-light:rgba(255,255,255,.3);--sh:0 16px 40px rgba(0,0,0,.04);--sh-hover:0 24px 54px rgba(227,80,44,.15);--r:20px;--pill:999px;--f1:'Shippori Mincho','Noto Sans TC',serif;--f2:'Inter','Noto Sans TC',sans-serif;--blur:blur(40px) saturate(200%)}
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased}
-body{font-family:var(--f2);background:var(--bg);color:var(--ink);line-height:1.7;overflow-x:hidden}
+body{font-family:var(--f2);background:var(--bg);color:var(--ink);line-height:1.75;overflow-x:hidden}
 a{color:inherit;text-decoration:none}button{cursor:pointer;border:none;background:none;font-family:inherit}
 .w{max-width:1120px;margin:0 auto;padding:0 24px}
-section{padding:100px 0}
-body::before{content:'';position:fixed;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(900px 500px at 15% 10%,rgba(217,79,48,.04),transparent),radial-gradient(700px 400px at 85% 80%,rgba(200,150,62,.05),transparent);opacity:.7}
+section{padding:110px 0}
+body::before{content:'';position:fixed;inset:-300px;z-index:-1;pointer-events:none;background:radial-gradient(1200px 1000px at 0% 0%,rgba(227,80,44,.08),transparent),radial-gradient(1000px 800px at 100% 100%,rgba(210,157,56,.1),transparent),radial-gradient(900px 900px at 50% 50%,rgba(246,240,230,.5),transparent);opacity:1;animation:liquidBg 25s infinite alternate ease-in-out;}
+@keyframes liquidBg { 0% {transform: translate(0px, 0px) scale(1);} 100% {transform: translate(-150px, -80px) scale(1.15);} }
 
 /* NAV */
-nav{position:fixed;top:0;width:100%;z-index:100;background:rgba(248,243,236,.85);backdrop-filter:blur(24px) saturate(160%);border-bottom:1px solid var(--brd);transition:box-shadow .4s}
-nav.scrolled{box-shadow:0 2px 20px rgba(43,33,24,.08)}
-nav .w{display:flex;align-items:center;justify-content:space-between;height:60px}
-.logo{font-family:var(--f1);font-weight:800;font-size:20px;display:flex;align-items:center;gap:8px}
-.logo span:first-child{font-size:24px}
-.nav-links{display:flex;gap:24px}
-.nav-links a{font-size:13px;font-weight:600;color:var(--ink2);transition:color .3s;position:relative}
+nav{position:fixed;top:0;width:100%;z-index:100;background:rgba(253,251,247,.3);backdrop-filter:blur(30px) saturate(200%);-webkit-backdrop-filter:blur(30px) saturate(200%);border-bottom:1px solid rgba(255,255,255,.15);transition:all .4s cubic-bezier(.16,1,.3,1)}
+nav.scrolled{background:rgba(253,251,247,.6);box-shadow:0 4px 32px rgba(0,0,0,.05);border-bottom:1px solid rgba(255,255,255,.4)}
+nav .w{display:flex;align-items:center;justify-content:space-between;height:68px}
+.logo{font-family:var(--f1);font-weight:800;font-size:22px;display:flex;align-items:center;gap:10px}
+.logo span:first-child{font-size:26px;filter:drop-shadow(0 4px 8px rgba(227,80,44,.2))}
+.nav-links{display:flex;gap:28px}
+.nav-links a{font-size:14px;font-weight:600;color:var(--ink2);transition:color .3s;position:relative}
 .nav-links a:hover{color:var(--acc)}
-.nav-links a::after{content:'';position:absolute;bottom:-3px;left:0;width:0;height:2px;background:var(--acc);transition:width .3s ease}
+.nav-links a::after{content:'';position:absolute;bottom:-4px;left:0;width:0;height:2px;background:var(--acc);transition:width .3s cubic-bezier(.16,1,.3,1);border-radius:2px}
 .nav-links a:hover::after{width:100%}
-.nav-cta{padding:7px 18px;border-radius:var(--pill);background:var(--acc);color:#fff;font-size:12px;font-weight:700;transition:all .3s;box-shadow:0 2px 8px rgba(217,79,48,.2)}
-.nav-cta:hover{background:var(--acc3);transform:translateY(-1px);box-shadow:0 4px 16px rgba(217,79,48,.3)}
+.nav-cta{padding:9px 22px;border-radius:var(--pill);background:var(--acc);color:#fff;font-size:13px;font-weight:700;transition:all .3s cubic-bezier(.16,1,.3,1);box-shadow:0 4px 12px rgba(227,80,44,.25)}
+.nav-cta:hover{background:var(--acc3);transform:translateY(-2px) scale(1.02);box-shadow:0 6px 20px rgba(227,80,44,.35)}
 @media(max-width:768px){.nav-links{display:none}}
 
 /* HERO */
-.hero{min-height:100vh;display:flex;align-items:center;padding-top:60px;position:relative;overflow:hidden}
-.hero::before{content:'';position:absolute;top:-20%;right:-10%;width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(217,79,48,.06),transparent 70%);animation:heroGlow 8s ease-in-out infinite alternate}
-@keyframes heroGlow{0%{transform:translate(0,0) scale(1)}100%{transform:translate(-40px,30px) scale(1.1)}}
+.hero{min-height:100vh;display:flex;align-items:center;padding-top:80px;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;top:-10%;right:-5%;width:700px;height:700px;border-radius:50%;background:radial-gradient(circle,rgba(227,80,44,.08),transparent 70%);animation:heroGlow 10s ease-in-out infinite alternate}
+@keyframes heroGlow{0%{transform:translate(0,0) scale(1)}100%{transform:translate(-50px,40px) scale(1.15)}}
 .hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
-.hero-tag{font-family:var(--f1);font-size:12px;font-weight:700;color:var(--acc);letter-spacing:.3em;margin-bottom:16px;display:flex;align-items:center;gap:10px;opacity:0;animation:fadeUp .8s .2s ease forwards}
-.hero-tag::before{content:'';width:36px;height:1.5px;background:var(--acc)}
-.hero h1{font-family:var(--f1);font-size:clamp(36px,5.5vw,62px);font-weight:800;line-height:1.12;letter-spacing:-.01em;opacity:0;animation:fadeUp .8s .4s ease forwards}
-.hero h1 em{font-style:normal;background:linear-gradient(135deg,var(--acc),var(--acc2));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
-.hero-desc{font-size:17px;color:var(--ink2);margin:20px 0 32px;line-height:1.9;max-width:440px;opacity:0;animation:fadeUp .8s .6s ease forwards}
-.hero-ctas{display:flex;gap:12px;flex-wrap:wrap;opacity:0;animation:fadeUp .8s .8s ease forwards}
-.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 28px;border-radius:var(--pill);font-size:14px;font-weight:700;transition:all .35s cubic-bezier(.4,0,.2,1)}
-.btn-p{background:var(--acc);color:#fff;box-shadow:0 4px 16px rgba(217,79,48,.25)}
-.btn-p:hover{background:var(--acc3);transform:translateY(-3px);box-shadow:0 8px 28px rgba(217,79,48,.35)}
-.btn-g{border:2px solid var(--brd);color:var(--ink);background:var(--card)}
-.btn-g:hover{border-color:var(--acc);color:var(--acc)}
-
-.hero-stats{display:flex;gap:36px;margin-top:44px;padding-top:28px;border-top:1px solid var(--brd);opacity:0;animation:fadeUp .8s 1s ease forwards}
-.stat-n{font-family:var(--f1);font-size:28px;font-weight:800;color:var(--acc)}
-.stat-l{font-size:12px;color:var(--ink3);margin-top:2px}
-
-@keyframes fadeUp{0%{opacity:0;transform:translateY(24px)}100%{opacity:1;transform:translateY(0)}}
+.hero-tag{font-family:var(--f2);font-size:12px;font-weight:800;color:var(--acc);letter-spacing:.3em;margin-bottom:20px;display:inline-flex;align-items:center;gap:12px;opacity:0;animation:fadeUp 1s .2s cubic-bezier(.16,1,.3,1) forwards;background:rgba(227,80,44,.08);padding:6px 16px;border-radius:var(--pill);border:1px solid rgba(227,80,44,.15)}
+.hero-tag::before{content:'';width:8px;height:8px;border-radius:50%;background:var(--acc);box-shadow:0 0 8px var(--acc)}
+.hero h1{font-family:var(--f1);font-size:clamp(40px,5.8vw,68px);font-weight:800;line-height:1.15;letter-spacing:-.01em;opacity:0;animation:fadeUp 1s .4s cubic-bezier(.16,1,.3,1) forwards;color:var(--ink)}
+.hero h1 em{font-style:normal;background:linear-gradient(135deg,var(--acc),var(--acc2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;position:relative}
+.hero h1 em::after{content:'';position:absolute;bottom:8px;left:0;width:100%;height:10px;background:rgba(227,80,44,.15);z-index:-1;border-radius:4px;transform:skewX(-15deg)}
+.hero-desc{font-size:18px;color:var(--ink2);margin:24px 0 40px;line-height:1.8;max-width:460px;opacity:0;animation:fadeUp 1s .6s cubic-bezier(.16,1,.3,1) forwards}
+.hero-ctas{display:flex;gap:14px;flex-wrap:wrap;opacity:0;animation:fadeUp 1s .8s cubic-bezier(.16,1,.3,1) forwards}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:15px 32px;border-radius:var(--pill);font-size:15px;font-weight:700;letter-spacing:.02em;transition:all .4s cubic-bezier(.16,1,.3,1)}
+.btn-p{background:linear-gradient(135deg,var(--acc),var(--acc3));color:#fff;box-shadow:0 6px 20px rgba(227,80,44,.25),inset 0 1px 0 rgba(255,255,255,.2)}
+.btn-p:hover{transform:translateY(-4px) scale(1.02);box-shadow:0 12px 32px rgba(227,80,44,.35),inset 0 1px 0 rgba(255,255,255,.3)}
+.btn-g{border:1px solid rgba(255,255,255,.6);color:var(--ink);background:rgba(255,255,255,.4);backdrop-filter:var(--blur);-webkit-backdrop-filter:var(--blur);box-shadow:0 4px 16px rgba(0,0,0,.04), inset 0 1px 1px rgba(255,255,255,.8)}
+.btn-g:hover{background:rgba(255,255,255,.6);transform:translateY(-4px) scale(1.02);box-shadow:0 12px 24px rgba(0,0,0,.08), inset 0 1px 1px rgba(255,255,255,1);color:var(--acc)}
+.hero-stats{display:flex;gap:40px;margin-top:50px;padding-top:32px;border-top:1px solid var(--brd);opacity:0;animation:fadeUp 1s 1s cubic-bezier(.16,1,.3,1) forwards}
+.stat-n{font-family:var(--f2);font-size:32px;font-weight:800;color:var(--acc);line-height:1;margin-bottom:6px}
+.stat-l{font-size:13px;color:var(--ink3);font-weight:500;letter-spacing:.05em}
+@keyframes fadeUp{0%{opacity:0;transform:translateY(32px)}100%{opacity:1;transform:translateY(0)}}
 
 /* Ukiyo-e Bowl */
-.hero-vis{position:relative;display:flex;justify-content:center;opacity:0;animation:fadeUp 1.2s .4s ease forwards}
-.bowl-wrap{width:420px;height:480px;position:relative;animation:bowlFloat 7s ease-in-out infinite;filter:drop-shadow(0 20px 40px rgba(0,0,0,.4))}
-@keyframes bowlFloat{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(-12px) rotate(.3deg)}}
-/* Sakura petals */
+.hero-vis{position:relative;display:flex;justify-content:center;opacity:0;animation:fadeUp 1.2s .4s cubic-bezier(.16,1,.3,1) forwards}
+.bowl-wrap{width:460px;height:520px;position:relative;animation:bowlFloat 8s cubic-bezier(.4,0,.2,1) infinite;filter:drop-shadow(0 24px 48px rgba(43,33,24,.15));transition:transform .4s}
+@keyframes bowlFloat{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(-16px) rotate(.4deg)}}
 .sakura{position:absolute;border-radius:50% 0 50% 0;background:rgba(232,142,138,.6);animation:sakuraFall linear infinite}
 @keyframes sakuraFall{0%{opacity:0;transform:translate(0,-20px) rotate(0) scale(.7)}15%{opacity:.8}85%{opacity:.6}100%{opacity:0;transform:translate(var(--sx),280px) rotate(var(--rot)) scale(.4)}}
-/* Ukiyo-e cloud steam */
 .ucloud{position:absolute;animation:ucloudRise 4s ease-in-out infinite}
 @keyframes ucloudRise{0%{opacity:0;transform:translateY(10px) scale(.8)}25%{opacity:.7}100%{opacity:0;transform:translateY(-60px) scale(1.3) translateX(var(--cx))}}
 
 /* SECTIONS */
-.sl{font-family:var(--f1);font-size:11px;font-weight:700;letter-spacing:.25em;color:var(--acc);margin-bottom:10px}
-.st{font-family:var(--f1);font-size:clamp(26px,4.5vw,40px);font-weight:800;line-height:1.2;margin-bottom:16px}
-.ss{font-size:16px;color:var(--ink2);max-width:560px}
-
-/* REVEAL */
-.rv{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s ease}
+.sl{font-family:var(--f2);font-size:12px;font-weight:800;letter-spacing:.3em;color:var(--acc);margin-bottom:12px;text-transform:uppercase}
+.st{font-family:var(--f1);font-size:clamp(28px,4.5vw,44px);font-weight:800;line-height:1.2;margin-bottom:20px;color:var(--ink)}
+.ss{font-size:17px;color:var(--ink2);max-width:580px;line-height:1.8}
+.rv{opacity:0;transform:translateY(32px);transition:opacity .8s cubic-bezier(.16,1,.3,1),transform .8s cubic-bezier(.16,1,.3,1)}
 .rv.vis{opacity:1;transform:translateY(0)}
 
+/* LIQUID GLASS CARDS */
+.bc, .kc, .cc, .sc {background:var(--card);backdrop-filter:var(--blur);-webkit-backdrop-filter:var(--blur);border-radius:var(--r);box-shadow:var(--sh), inset 0 1px 1px rgba(255,255,255,1), inset 0 -1px 2px rgba(255,255,255,0.2), inset 0 0 40px rgba(255,255,255,0.1);transition:all .5s cubic-bezier(.16,1,.3,1);position:relative;overflow:hidden;border:1px solid rgba(255,255,255,0.15)}
+.bc:hover, .kc:hover, .cc:hover, .sc:hover {background:var(--card-hover);transform:translateY(-8px) scale(1.02);box-shadow:var(--sh-hover), inset 0 1px 2px rgba(255,255,255,1), inset 0 -1px 2px rgba(255,255,255,0.3);border-color:rgba(255,255,255,0.4)}
+.bc::before, .kc::before, .cc::before, .sc::before {content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(255,255,255,.4) 0%,rgba(255,255,255,0) 100%);pointer-events:none;border-radius:var(--r)}
+
 /* BROTH */
-#broth{background:var(--bg2)}
-.bg{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin-top:40px}
-.bc{background:var(--card);border:1px solid var(--brd);border-radius:var(--r);padding:24px;transition:all .4s cubic-bezier(.4,0,.2,1);position:relative;overflow:hidden}
-.bc:hover{transform:translateY(-5px) scale(1.01);box-shadow:var(--sh);border-color:rgba(217,79,48,.3)}
-.bc::after{content:'';position:absolute;top:0;left:0;width:100%;height:3px;background:linear-gradient(90deg,var(--acc),var(--acc2));transform:scaleX(0);transform-origin:left;transition:transform .4s ease}
+#broth{position:relative;z-index:1}
+#broth::before{content:'';position:absolute;inset:0;background:var(--bg2);opacity:0.4;z-index:-1;}
+.bg{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px;margin-top:48px}
+.bc{padding:30px}
+.bc::after{content:'';position:absolute;bottom:0;left:0;width:100%;height:4px;background:linear-gradient(90deg,var(--acc),var(--acc2));transform:scaleX(0);transform-origin:left;transition:transform .5s cubic-bezier(.16,1,.3,1)}
 .bc:hover::after{transform:scaleX(1)}
-.bc-icon{width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:22px;margin-bottom:14px}
-.bc h3{font-family:var(--f1);font-size:18px;font-weight:800;margin-bottom:2px}
-.bc-jp{font-size:12px;color:var(--ink3);margin-bottom:10px}
-.bc-desc{font-size:13px;color:var(--ink2);margin-bottom:14px;line-height:1.7}
-.tag{display:inline-block;padding:3px 10px;border-radius:var(--pill);font-size:11px;font-weight:600;background:rgba(217,79,48,.08);color:var(--acc3);margin:2px}
-.tag-g{background:rgba(200,150,62,.1);color:var(--gold)}
-.tag-b{background:rgba(91,143,168,.1);color:#5B8FA8}
+.bc-icon{width:56px;height:56px;border-radius:18px;display:flex;align-items:center;justify-content:center;font-size:28px;margin-bottom:20px;box-shadow:0 8px 24px rgba(0,0,0,.06), inset 0 2px 4px rgba(255,255,255,.8);background:rgba(255,255,255,.8);backdrop-filter:var(--blur)}
+.bc h3{font-family:var(--f1);font-size:20px;font-weight:800;margin-bottom:4px;color:var(--ink)}
+.bc-jp{font-family:var(--f2);font-size:12px;font-weight:600;color:var(--ink3);margin-bottom:14px;letter-spacing:.05em}
+.bc-desc{font-size:14px;color:var(--ink2);margin-bottom:20px;line-height:1.7}
+.tag{position:relative;z-index:2;display:inline-flex;align-items:center;padding:4px 12px;border-radius:var(--pill);font-family:var(--f2);font-size:11px;font-weight:700;letter-spacing:.02em;background:rgba(227,80,44,.1);color:var(--acc);margin:0 6px 6px 0;border:1px solid rgba(227,80,44,.15)}
+.tag-g{background:rgba(210,157,56,.1);color:var(--gold);border-color:rgba(210,157,56,.2)}
+.tag-b{background:rgba(91,143,168,.1);color:#4A7A91;border-color:rgba(91,143,168,.2)}
 
 /* FINDER */
-.fc{display:flex;gap:10px;flex-wrap:wrap;margin:28px 0 12px}
-.fb{padding:8px 18px;border-radius:var(--pill);font-size:13px;font-weight:600;color:var(--ink2);background:var(--card);border:1px solid var(--brd);transition:all .3s}
-.fb:hover,.fb.act{background:var(--acc);color:#fff;border-color:var(--acc);transform:scale(1.03)}
-.sb{flex:1;min-width:220px;padding:11px 20px;border-radius:var(--pill);border:1px solid var(--brd);background:var(--card);font-size:14px;font-family:var(--f2);color:var(--ink);outline:none;transition:border-color .3s,box-shadow .3s}
-.sb:focus{border-color:var(--acc);box-shadow:0 0 0 3px rgba(217,79,48,.1)}
-.sb::placeholder{color:var(--ink3)}
+.fc{display:flex;gap:12px;flex-wrap:wrap;margin:32px 0 16px}
+.fb{padding:10px 24px;border-radius:var(--pill);font-family:var(--f2);font-size:14px;font-weight:600;color:var(--ink2);background:rgba(255,255,255,.3);backdrop-filter:var(--blur);-webkit-backdrop-filter:var(--blur);border:1px solid rgba(255,255,255,.2);box-shadow:0 4px 12px rgba(0,0,0,.03), inset 0 1px 1px rgba(255,255,255,0.8);transition:all .4s cubic-bezier(.16,1,.3,1)}
+.fb:hover{background:rgba(255,255,255,.6);color:var(--acc);transform:translateY(-2px);box-shadow:0 8px 20px rgba(0,0,0,.06), inset 0 1px 1px rgba(255,255,255,1)}
+.fb.act{background:linear-gradient(135deg,rgba(227,80,44,.8),rgba(194,64,33,.8));color:#fff;border-color:rgba(255,255,255,.4);box-shadow:0 8px 24px rgba(227,80,44,.3), inset 0 1px 1px rgba(255,255,255,0.5);transform:translateY(-2px)}
+.sb-wrap{position:relative;flex:1;min-width:280px;max-width:500px}
+.sb{width:100%;padding:14px 24px 14px 44px;border-radius:var(--pill);border:1px solid rgba(255,255,255,.3);background:rgba(255,255,255,.4);backdrop-filter:var(--blur);-webkit-backdrop-filter:var(--blur);font-size:15px;font-family:var(--f2);font-weight:500;color:var(--ink);outline:none;transition:all .4s cubic-bezier(.16,1,.3,1);box-shadow:0 4px 16px rgba(0,0,0,.04), inset 0 1px 1px rgba(255,255,255,0.8)}
+.sb:hover{background:rgba(255,255,255,.65);box-shadow:0 8px 24px rgba(0,0,0,.06), inset 0 1px 1px rgba(255,255,255,1)}
+.sb:focus{border-color:var(--acc);background:rgba(255,255,255,.8);box-shadow:0 0 0 4px rgba(227,80,44,.15),0 8px 32px rgba(227,80,44,.1), inset 0 1px 1px rgba(255,255,255,1)}
+.sb::placeholder{color:var(--ink3);font-weight:400}
+.sb-icon{position:absolute;left:16px;top:50%;transform:translateY(-50%);font-size:16px;pointer-events:none;color:var(--ink3)}
 
-.sg{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:16px;margin-top:20px}
-.sc{background:var(--card);border:1px solid var(--brd);border-radius:var(--r);padding:22px;transition:all .35s cubic-bezier(.4,0,.2,1);position:relative;animation:cardIn .5s ease both}
-.sc:hover{transform:translateY(-4px);box-shadow:var(--sh);border-color:rgba(217,79,48,.25)}
-@keyframes cardIn{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
-.sc-h{display:flex;justify-content:space-between;align-items:flex-start}
-.sc-n{font-family:var(--f1);font-size:17px;font-weight:800}
-.sc-r{display:flex;align-items:center;gap:3px;font-size:13px;font-weight:700;color:var(--gold)}
-.sc-r::before{content:'★'}
-.sc-loc{font-size:12px;color:var(--ink3);margin:3px 0 10px;display:flex;align-items:center;gap:4px}
-.sc-tags{display:flex;gap:4px;flex-wrap:wrap;margin-bottom:10px}
-.sc-det{display:grid;grid-template-columns:1fr 1fr;gap:6px;font-size:12px;color:var(--ink2)}
-.sc-dl{color:var(--ink3)}
-.sc-badge{position:absolute;top:-1px;right:18px;background:var(--acc);color:#fff;font-size:10px;font-weight:700;padding:3px 10px;border-radius:0 0 6px 6px}
-.sc-cnt{text-align:center;padding:16px;color:var(--ink3);font-size:13px}
-.lm{display:block;margin:24px auto 0;padding:12px 36px;border-radius:var(--pill);border:2px solid var(--brd);font-size:13px;font-weight:700;color:var(--ink2);transition:all .3s}
-.lm:hover{border-color:var(--acc);color:var(--acc)}
+.sg{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:24px;margin-top:32px}
+.sc{padding:26px;animation:cardIn .6s cubic-bezier(.16,1,.3,1) both}
+@keyframes cardIn{from{opacity:0;transform:translateY(24px) scale(.95)}to{opacity:1;transform:translateY(0) scale(1)}}
+.sc-h{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:12px;position:relative;z-index:2}
+.sc-n{font-family:var(--f1);font-size:19px;font-weight:800;color:var(--ink);line-height:1.3}
+.sc-r{display:flex;align-items:center;gap:4px;font-family:var(--f2);font-size:14px;font-weight:700;color:var(--gold);background:rgba(210,157,56,.1);padding:4px 10px;border-radius:var(--pill);border:1px solid rgba(210,157,56,.2);margin-left:12px}
+.sc-r::before{content:'★';font-size:12px}
+.sc-loc{position:relative;z-index:2;font-family:var(--f2);font-size:13px;font-weight:500;color:var(--ink2);margin-bottom:14px;display:flex;align-items:center;gap:6px}
+.sc-tags{position:relative;z-index:2;display:flex;gap:6px;flex-wrap:wrap;margin-bottom:16px}
+.sc-det{position:relative;z-index:2;display:grid;grid-template-columns:1fr 1fr;gap:10px;font-family:var(--f2);font-size:13px;color:var(--ink);background:rgba(255,255,255,.3);padding:12px 16px;border-radius:12px;border:1px solid rgba(255,255,255,.4);box-shadow:inset 0 1px 1px rgba(255,255,255,0.5)}
+.sc-dl{color:var(--ink3);font-weight:600;font-size:11px;letter-spacing:.05em;text-transform:uppercase;display:block;margin-bottom:2px}
+.sc-badge{position:absolute;top:0;right:24px;background:linear-gradient(135deg,var(--acc),var(--acc3));color:#fff;font-family:var(--f2);font-size:11px;font-weight:700;padding:6px 14px;border-radius:0 0 12px 12px;box-shadow:0 4px 12px rgba(227,80,44,.3);letter-spacing:.02em;z-index:10;border-bottom:1px solid rgba(255,255,255,0.4)}
+.sc-cnt{text-align:center;padding:24px;color:var(--ink3);font-family:var(--f2);font-size:14px;font-weight:500}
 
-/* KNOWLEDGE */
-#know{background:var(--bg2)}
-.kg{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-top:40px}
-.kc{background:var(--card);border:1px solid var(--brd);border-radius:var(--r);padding:24px;transition:all .35s}
-.kc:hover{transform:translateY(-4px);box-shadow:var(--sh)}
-.kc-i{font-size:32px;margin-bottom:12px}
-.kc h3{font-family:var(--f1);font-size:16px;font-weight:800;margin-bottom:6px}
-.kc p{font-size:13px;color:var(--ink2);line-height:1.7}
+/* KNOWLEDGE & COMMUNITY */
+#know{position:relative;z-index:1}
+#know::before{content:'';position:absolute;inset:0;background:var(--bg2);opacity:0.4;z-index:-1;}
+.kg, .cg{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px;margin-top:48px}
+.kc, .cc{padding:30px}
+.kc-i{position:relative;z-index:2;font-size:36px;margin-bottom:16px;filter:drop-shadow(0 4px 8px rgba(0,0,0,.1))}
+.kc h3, .cc h3{position:relative;z-index:2;font-family:var(--f1);font-size:18px;font-weight:800;margin-bottom:8px;color:var(--ink)}
+.kc p, .cc-d{position:relative;z-index:2;font-size:14px;color:var(--ink2);line-height:1.75}
+.cc-s{position:relative;z-index:2;display:flex;gap:16px;margin-bottom:20px;font-family:var(--f2);font-size:13px;color:var(--ink3);font-weight:500}
+.cc-s strong{color:var(--acc);font-weight:700;font-size:15px}
+.cc-l{position:relative;z-index:2;display:inline-flex;align-items:center;gap:6px;font-family:var(--f2);font-size:14px;font-weight:700;color:var(--acc);transition:all .3s}
+.cc-l::after{content:'→';transition:transform .3s}
+.cc-l:hover::after{transform:translateX(4px)}
 
 /* GOLDEN */
-.gt{width:100%;border-collapse:collapse;margin-top:36px;background:var(--card);border-radius:var(--r);overflow:hidden;border:1px solid var(--brd)}
-.gt th{padding:14px 18px;text-align:left;font-size:12px;font-weight:700;color:var(--ink3);letter-spacing:.05em;background:var(--bg2);border-bottom:1px solid var(--brd)}
-.gt td{padding:14px 18px;font-size:14px;border-bottom:1px solid var(--brd)}
+.gt{width:100%;border-collapse:separate;border-spacing:0;margin-top:48px;background:var(--card);backdrop-filter:var(--blur);-webkit-backdrop-filter:var(--blur);border-radius:var(--r);overflow:hidden;border:1px solid rgba(255,255,255,0.4);box-shadow:var(--sh), inset 0 1px 1px rgba(255,255,255,0.8)}
+.gt th{padding:18px 24px;text-align:left;font-family:var(--f2);font-size:13px;font-weight:700;color:var(--ink3);letter-spacing:.05em;background:rgba(255,255,255,.3);border-bottom:1px solid rgba(255,255,255,.3)}
+.gt td{padding:18px 24px;font-family:var(--f2);font-size:15px;color:var(--ink);border-bottom:1px solid rgba(255,255,255,.3)}
 .gt tr:last-child td{border-bottom:none}
-.gt tr:hover td{background:rgba(217,79,48,.02)}
-.gt .champ{font-family:var(--f1);font-weight:800;color:var(--acc)}
-
-/* COMMUNITY */
-.cg{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin-top:40px}
-.cc{background:var(--card);border:1px solid var(--brd);border-radius:var(--r);padding:28px;transition:all .35s}
-.cc:hover{transform:translateY(-4px);box-shadow:var(--sh)}
-.cc h3{font-family:var(--f1);font-size:18px;font-weight:800;margin-bottom:6px}
-.cc-d{font-size:13px;color:var(--ink2);margin-bottom:14px}
-.cc-s{display:flex;gap:16px;margin-bottom:14px;font-size:12px;color:var(--ink3)}
-.cc-s strong{color:var(--acc);font-weight:700}
-.cc-l{display:inline-flex;align-items:center;gap:5px;font-size:13px;font-weight:700;color:var(--acc);transition:gap .3s}
-.cc-l:hover{gap:10px}
+.gt tr{transition:background .3s}
+.gt tr:hover{background:rgba(255,255,255,.6)}
+.gt .champ{font-family:var(--f1);font-weight:800;color:var(--acc);font-size:16px}
 
 /* FOOTER */
-footer{background:var(--ink);color:rgba(255,255,255,.5);padding:56px 0 36px}
-.fg{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:36px}
-.fb-r{font-family:var(--f1);font-size:22px;font-weight:800;color:#fff;margin-bottom:10px}
-.fb-d{font-size:13px;line-height:1.7;max-width:280px}
-footer h4{font-size:12px;font-weight:700;color:#fff;letter-spacing:.1em;margin-bottom:14px}
-footer a{font-size:13px;display:block;padding:3px 0;transition:color .2s}
-footer a:hover{color:var(--acc2)}
-.fb-b{margin-top:36px;padding-top:16px;border-top:1px solid rgba(255,255,255,.08);font-size:12px;text-align:center}
+footer{background:linear-gradient(180deg,#1F1813,#140F0A);color:rgba(255,255,255,.6);padding:80px 0 40px;position:relative;overflow:hidden}
+footer::before{content:'';position:absolute;top:0;left:0;width:100%;height:1px;background:linear-gradient(90deg,transparent,rgba(255,255,255,.2),transparent)}
+.fg{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:48px}
+.fb-r{font-family:var(--f1);font-size:24px;font-weight:800;color:#fff;margin-bottom:12px;display:flex;align-items:center;gap:8px}
+.fb-d{font-size:14px;line-height:1.8;max-width:300px}
+footer h4{font-family:var(--f2);font-size:13px;font-weight:700;color:#fff;letter-spacing:.1em;margin-bottom:20px;text-transform:uppercase}
+footer a{font-family:var(--f2);font-size:14px;display:inline-block;padding:4px 0;transition:all .3s;position:relative}
+footer a::after{content:'';position:absolute;bottom:0;left:0;width:0;height:1px;background:var(--acc2);transition:width .3s}
+footer a:hover{color:#fff;transform:translateX(4px)}
+footer a:hover::after{width:100%}
+.fb-b{margin-top:60px;padding-top:24px;border-top:1px solid rgba(255,255,255,.08);font-family:var(--f2);font-size:13px;text-align:center;color:rgba(255,255,255,.4)}
 
 @media(max-width:768px){
 .hero-grid{grid-template-columns:1fr;text-align:center}
-.hero-desc{margin-left:auto;margin-right:auto}
+.hero-desc{margin:24px auto 32px}
 .hero-ctas{justify-content:center}
 .hero-stats{justify-content:center}
-.hero-vis{order:-1}
-.bowl-wrap{width:300px;height:360px}
+.hero-vis{order:-1;margin-bottom:20px}
+.bowl-wrap{width:320px;height:380px}
 .fg{grid-template-columns:1fr 1fr}
 .sg{grid-template-columns:1fr}
-section{padding:64px 0}
+section{padding:80px 0}
+.sb-wrap{max-width:100%}
 }
-@media(max-width:480px){.fg{grid-template-columns:1fr}.hero-stats{flex-direction:column;gap:14px;align-items:center}}
+@media(max-width:480px){.fg{grid-template-columns:1fr}.hero-stats{flex-direction:column;gap:16px;align-items:center}}
+
+/* GACHA & ACHIEVEMENTS */
+.fabs{position:fixed;bottom:30px;right:30px;display:flex;flex-direction:column;gap:12px;z-index:90}
+.f-b{width:60px;height:60px;border-radius:50%;background:rgba(255,255,255,0.7);backdrop-filter:var(--blur);-webkit-backdrop-filter:var(--blur);box-shadow:0 8px 24px rgba(0,0,0,0.1), inset 0 1px 1px #fff;display:flex;align-items:center;justify-content:center;font-size:24px;border:1px solid rgba(255,255,255,0.8);transition:all .3s cubic-bezier(.16,1,.3,1)}
+.f-b:hover{transform:translateY(-4px) scale(1.05);background:rgba(255,255,255,0.9);box-shadow:0 12px 32px rgba(227,80,44,0.2)}
+.f-b-g{background:linear-gradient(135deg,var(--acc),var(--acc3));color:#fff;border:none;box-shadow:0 8px 24px rgba(227,80,44,0.3)}
+.f-b-g:hover{background:var(--acc);transform:translateY(-4px) scale(1.05);box-shadow:0 12px 32px rgba(227,80,44,0.4);border-color:transparent}
+.mdl{position:fixed;inset:0;background:rgba(31,24,19,0.7);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);z-index:999;display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:all .4s cubic-bezier(.16,1,.3,1)}
+.mdl.on{opacity:1;pointer-events:auto}
+.mc{background:var(--card);backdrop-filter:var(--blur);-webkit-backdrop-filter:var(--blur);border:1px solid rgba(255,255,255,0.6);border-radius:24px;padding:40px;width:90%;max-width:440px;transform:translateY(30px) scale(0.95);transition:all .5s cubic-bezier(.16,1,.3,1);box-shadow:0 24px 64px rgba(0,0,0,0.2), inset 0 1px 2px rgba(255,255,255,0.8);position:relative;text-align:center}
+.mdl.on .mc{transform:translateY(0) scale(1)}
+.mc-cls{position:absolute;top:20px;right:20px;width:32px;height:32px;border-radius:50%;background:rgba(255,255,255,0.5);display:flex;align-items:center;justify-content:center;font-size:16px;color:var(--ink2);transition:all .3s}
+.mc-cls:hover{background:#fff;color:var(--acc)}
+.chk-btn{padding:6px 14px;border-radius:var(--pill);font-family:var(--f2);font-size:12px;font-weight:700;color:var(--acc);background:rgba(227,80,44,0.1);border:1px solid rgba(227,80,44,0.2);transition:all .3s;margin-left:auto;box-shadow:inset 0 1px 0 rgba(255,255,255,0.5)}
+.chk-btn:hover{background:var(--acc);color:#fff;border-color:var(--acc)}
+.chk-btn.vsd{background:linear-gradient(135deg,var(--gold),#E8C97A);color:#fff;border-color:#E8C97A;box-shadow:0 4px 12px rgba(210,157,56,0.3)}
+.sc.vsd{opacity:0.8;background:rgba(255,255,255,0.15);border-color:rgba(255,255,255,0.1)}
+.sc.vsd::after{content:'已攻略';position:absolute;top:50%;left:50%;transform:translate(-50%,-50%) rotate(-15deg);font-family:var(--f1);font-size:40px;font-weight:800;color:var(--gold);opacity:0.12;pointer-events:none;letter-spacing:10px}
+.tr-sec{background:linear-gradient(180deg,#FAF8F5,#FFF);padding:80px 0;border-bottom:1px solid rgba(0,0,0,0.05)}
+.tr-h{display:flex;align-items:flex-end;justify-content:space-between;border-bottom:2px solid rgba(0,0,0,0.05);padding-bottom:16px;margin-bottom:32px}
+.tr-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px}
+.tr-c{background:#fff;border-radius:20px;padding:20px;display:flex;align-items:center;gap:16px;box-shadow:0 12px 32px rgba(0,0,0,0.04);border:1px solid rgba(0,0,0,0.05);transition:all .4s;position:relative;overflow:hidden;filter:grayscale(1);opacity:0.6}
+.tr-c.unl{filter:grayscale(0);opacity:1;box-shadow:0 16px 48px rgba(210,157,56,0.15);border-color:var(--gold);transform:translateY(-2px)}
+.tr-c.unl::before{content:'';position:absolute;top:-50%;left:-50%;width:200%;height:200%;background:radial-gradient(circle,rgba(255,255,255,0.8),transparent 60%);animation:trGlow 4s linear infinite;pointer-events:none}
+@keyframes trGlow{0%{transform:rotate(0deg) translate(20px)}100%{transform:rotate(360deg) translate(20px)}}
+.tr-i{font-size:40px;filter:drop-shadow(0 8px 16px rgba(0,0,0,0.15));z-index:1}
+.tr-d{flex:1;z-index:1}
+.tr-n{font-family:var(--f1);font-size:18px;font-weight:800;color:var(--ink);margin-bottom:4px}
+.tr-desc{font-size:12px;color:var(--ink3);line-height:1.4;margin-bottom:10px}
+.tr-prog{background:#f0eadd;height:6px;border-radius:3px;overflow:hidden;position:relative}
+.tr-prog-b{position:absolute;top:0;left:0;height:100%;background:linear-gradient(90deg,var(--gold),#e8c97a);border-radius:3px;transition:width 1s cubic-bezier(.16,1,.3,1)}
+.tr-prog-t{font-family:var(--f2);font-size:11px;font-weight:700;color:var(--gold);text-align:right;margin-top:6px}
+.tr-stat{font-family:var(--f1);font-size:32px;font-weight:900;color:var(--acc);position:relative;display:inline-block}
+.tr-stat::after{content:' Bowls';font-size:14px;color:var(--ink3);font-family:var(--f2);font-weight:600}
+
+.g-rarity{font-family:var(--f2);font-size:20px;font-weight:900;letter-spacing:.1em;margin-bottom:20px;display:inline-block;padding:6px 24px;border-radius:12px}
+.r-UR{color:#fff;background:linear-gradient(135deg,#D29D38,#E8C97A);box-shadow:0 8px 24px rgba(210,157,56,0.4);animation:urGlow 2s infinite alternate}
+.r-SSR{color:#fff;background:linear-gradient(135deg,#9b59b6,#8e44ad);box-shadow:0 8px 24px rgba(155,89,182,0.4)}
+.r-SR{color:#fff;background:linear-gradient(135deg,#3498db,#2980b9);box-shadow:0 8px 24px rgba(52,152,219,0.4)}
+.r-R{color:#fff;background:linear-gradient(135deg,#95a5a6,#7f8c8d);box-shadow:0 8px 24px rgba(149,165,166,0.4)}
+@keyframes urGlow{0%{filter:hue-rotate(0deg) brightness(1) drop-shadow(0 0 10px rgba(210,157,56,0.5))}100%{filter:hue-rotate(30deg) brightness(1.2) drop-shadow(0 0 20px rgba(210,157,56,0.8))}}
+.g-sh{background:rgba(255,255,255,0.6);border:1px solid rgba(255,255,255,0.8);border-radius:16px;padding:24px;box-shadow:0 12px 32px rgba(0,0,0,0.06), inset 0 1px 1px #fff;margin-bottom:32px;text-align:left;position:relative}
+.g-btns{display:flex;gap:16px;justify-content:center}
 </style>
 </head>
 <body>
 
+<div class="fabs">
+  <button class="f-b f-b-g" id="btnGacha" title="拉麵抽卡">🍜</button>
+  <a href="#achievements" class="f-b" id="btnPass" title="我的拉麵成就" style="text-decoration:none">🏅</a>
+</div>
+
+<!-- Modal Gacha -->
+<div class="mdl" id="m-gacha">
+  <div class="mc">
+    <button class="mc-cls" onclick="document.getElementById('m-gacha').classList.remove('on')">✕</button>
+    <div id="g-res"></div>
+    <div class="g-btns">
+      <button class="btn btn-g" onclick="rollGacha()">再一次！</button>
+      <button class="btn btn-p" id="g-acc">就吃這家</button>
+    </div>
+  </div>
+</div>
+
 <nav id="nb"><div class="w">
 <a href="#" class="logo"><span>🍜</span><span>麵魂</span></a>
-<div class="nav-links"><a href="#broth">湯頭圖鑑</a><a href="#finder">店家搜尋</a><a href="#know">拉麵百科</a><a href="#golden">金賞殿堂</a><a href="#comm">社群</a></div>
+<div class="nav-links"><a href="#achievements">成就</a><a href="#broth">湯頭圖鑑</a><a href="#know">拉麵百科</a><a href="#comm">社群</a><a href="#finder">店家搜尋</a></div>
 <a href="#finder" class="nav-cta">找拉麵 →</a>
 </div></nav>
 
@@ -330,6 +391,17 @@ section{padding:64px 0}
 </div>
 </div></div></section>
 
+<section id="achievements" class="tr-sec"><div class="w">
+<div class="tr-h rv">
+  <div>
+    <div class="sl">MY JOURNEY</div>
+    <h2 class="st" style="margin-bottom:0">個人拉麵成就</h2>
+  </div>
+  <div class="tr-stat" id="tr-total">0</div>
+</div>
+<div class="tr-grid" id="tr-list"></div>
+</div></section>
+
 <section id="broth"><div class="w">
 <div class="sl rv">BROTH GUIDE</div>
 <h2 class="st rv">認識六大湯頭</h2>
@@ -344,11 +416,36 @@ section{padding:64px 0}
 </div>
 </div></section>
 
+<section id="know"><div class="w">
+<div class="sl rv">RAMEN 101</div>
+<h2 class="st rv">成為拉麵通</h2>
+<div class="kg">
+<div class="kc rv"><div class="kc-i">🍝</div><h3>麵體種類</h3><p>極細麵到極粗麵。含水率決定口感，鹼水賦予獨特彈性。博多搭極細、味噌搭粗麵。</p></div>
+<div class="kc rv"><div class="kc-i">🥩</div><h3>叉燒圖鑑</h3><p>捲叉燒、低溫叉燒、厚切炙燒、角煮、雞叉燒。每種帶來不同口感體驗。</p></div>
+<div class="kc rv"><div class="kc-i">🥚</div><h3>溏心蛋學</h3><p>醬油味醂醃漬的半熟蛋。蛋黃呈流動至半凝固。好的味玉是拉麵的靈魂配角。</p></div>
+<div class="kc rv"><div class="kc-i">📐</div><h3>湯頭三要素</h3><p>高湯(出汁)× 調味醬(タレ)× 香味油。三者比例決定一碗拉麵的完整風味。</p></div>
+<div class="kc rv"><div class="kc-i">🥢</div><h3>正確吃法</h3><p>先喝湯→趁熱吃麵→搭配配料→中途調味→最後品湯。15分鐘內完食。</p></div>
+<div class="kc rv"><div class="kc-i">🔄</div><h3>替玉文化</h3><p>博多豚骨系特有加麵文化。留些湯搭新麵，可選不同硬度，品味風味變化。</p></div>
+<div class="kc rv"><div class="kc-i">🎌</div><h3>派系與流派</h3><p>博多系、家系、二郎系、煮干系、淡麗系。加上台灣獨有的創作限定、牛骨系。</p></div>
+<div class="kc rv"><div class="kc-i">💪</div><h3>健康吃法</h3><p>湯別喝完、選清湯系、加蔬菜、選粗麵少油。鹽味最低卡，味噌最高。</p></div>
+</div>
+</div></section>
+
+<section id="comm"><div class="w">
+<div class="sl rv">COMMUNITY</div>
+<h2 class="st rv">加入台灣拉麵圈</h2>
+<div class="cg">
+<div class="cc rv"><h3>🏛️ 台灣拉麵協會</h3><p class="cc-d">2025年8月成立，300+ 收錄店家，22 縣市覆蓋。</p><div class="cc-s"><span><strong>300+</strong> 店家</span><span><strong>22</strong> 縣市</span></div><a href="https://taiwan-ramen-association.github.io" target="_blank" class="cc-l">官網 →</a></div>
+<div class="cc rv"><h3>👥 台灣拉麵愛好會</h3><p class="cc-d">Facebook 最大拉麵社團，9萬+ 粉絲，每年舉辦金賞票選。</p><div class="cc-s"><span><strong>9萬+</strong> 粉絲</span><span><strong>5萬+</strong> 社團</span></div><a href="https://www.facebook.com/groups/RamenTW/" target="_blank" class="cc-l">FB 社團 →</a></div>
+<div class="cc rv"><h3>🗺️ 拉麵地圖</h3><p class="cc-d">全台 1071 家拉麵店標記，顏色區分湯頭，可直接導航。</p><div class="cc-s"><span><strong>1071</strong> 家</span><span><strong>100萬+</strong> 瀏覽</span></div><a href="http://tinyurl.com/p6e9u8l" target="_blank" class="cc-l">開啟地圖 →</a></div>
+</div>
+</div></section>
+
 <section id="finder"><div class="w">
 <div class="sl rv">RAMEN FINDER</div>
 <h2 class="st rv">找到你的命定拉麵</h2>
-<p class="ss rv">全台 262 家詳細驗證，依城市、湯頭、評分篩選。</p>
-<div class="fc rv"><input type="text" class="sb" id="si" placeholder="搜尋店名、地區、湯頭…"></div>
+<p class="ss rv">全台 235 家詳細驗證，依城市、湯頭、評分篩選。</p>
+<div class="fc rv"><div class="sb-wrap"><span class="sb-icon">🔍</span><input type="text" class="sb" id="si" placeholder="搜尋店名、地區、湯頭…"></div></div>
 <div class="fc rv" id="cf">
 <button class="fb act" data-c="all">全部</button>
 <button class="fb" data-c="台北市">台北</button>
@@ -371,326 +468,39 @@ section{padding:64px 0}
 <button class="fb" data-b="鹽味">🧂鹽味</button>
 <button class="fb" data-b="魚介">🐟魚介</button>
 </div>
+<div class="fc rv" id="ff">
+<button class="fb act" data-f="all">全部特色</button>
+<button class="fb" data-f="米其林">🌟米其林</button>
+<button class="fb" data-f="免排隊">⚡免排隊</button>
+<button class="fb" data-f="深夜營業">🌙深夜營業</button>
+<button class="fb" data-f="沾麵">🍜沾麵</button>
+<button class="fb" data-f="二郎系">🗻二郎系</button>
+</div>
+<div class="fc rv" id="sf">
+<button class="fb act" data-s="rand">🎲探索(隨機)</button>
+<button class="fb" data-s="r">⭐評分(高到低)</button>
+<button class="fb" data-s="p">💲價格(低到高)</button>
+</div>
 <div class="sc-cnt" id="cnt"></div>
 <div class="sg" id="grid"></div>
-<button class="lm" id="lm" style="display:none">載入更多</button>
-</div></section>
-
-<section id="know"><div class="w">
-<div class="sl rv">RAMEN 101</div>
-<h2 class="st rv">成為拉麵通</h2>
-<div class="kg">
-<div class="kc rv"><div class="kc-i">🍝</div><h3>麵體種類</h3><p>極細麵到極粗麵。含水率決定口感，鹼水賦予獨特彈性。博多搭極細、味噌搭粗麵。</p></div>
-<div class="kc rv"><div class="kc-i">🥩</div><h3>叉燒圖鑑</h3><p>捲叉燒、低溫叉燒、厚切炙燒、角煮、雞叉燒。每種帶來不同口感體驗。</p></div>
-<div class="kc rv"><div class="kc-i">🥚</div><h3>溏心蛋學</h3><p>醬油味醂醃漬的半熟蛋。蛋黃呈流動至半凝固。好的味玉是拉麵的靈魂配角。</p></div>
-<div class="kc rv"><div class="kc-i">📐</div><h3>湯頭三要素</h3><p>高湯(出汁)× 調味醬(タレ)× 香味油。三者比例決定一碗拉麵的完整風味。</p></div>
-<div class="kc rv"><div class="kc-i">🥢</div><h3>正確吃法</h3><p>先喝湯→趁熱吃麵→搭配配料→中途調味→最後品湯。15分鐘內完食。</p></div>
-<div class="kc rv"><div class="kc-i">🔄</div><h3>替玉文化</h3><p>博多豚骨系特有加麵文化。留些湯搭新麵，可選不同硬度，品味風味變化。</p></div>
-<div class="kc rv"><div class="kc-i">🎌</div><h3>派系與流派</h3><p>博多系、家系、二郎系、煮干系、淡麗系。加上台灣獨有的創作限定、牛骨系。</p></div>
-<div class="kc rv"><div class="kc-i">💪</div><h3>健康吃法</h3><p>湯別喝完、選清湯系、加蔬菜、選粗麵少油。鹽味最低卡，味噌最高。</p></div>
-</div>
-</div></section>
-
-<section id="golden"><div class="w">
-<div class="sl rv">HALL OF FAME</div>
-<h2 class="st rv">台灣拉麵愛好會金賞殿堂</h2>
-<p class="ss rv">每年由 9 萬+ 麵友票選，台灣拉麵最高榮譽。</p>
-<table class="gt rv"><thead><tr><th>年度</th><th>冠軍</th><th>湯頭</th><th>備註</th></tr></thead><tbody>
-<tr><td>2019</td><td class="champ">鬼金棒</td><td>辣麻味噌</td><td>首屆票選</td></tr>
-<tr><td>2020</td><td class="champ">鬼金棒</td><td>辣麻味噌</td><td>蟬聯(361店參戰)</td></tr>
-<tr><td>2021</td><td class="champ">勝王</td><td>創作限定</td><td>首次奪冠</td></tr>
-<tr><td>2022</td><td class="champ">勝王</td><td>創作限定</td><td>二連霸</td></tr>
-<tr><td>2023</td><td class="champ">勝王</td><td>創作限定</td><td>三連霸 → 殿堂 🏆</td></tr>
-</tbody></table>
-</div></section>
-
-<section id="comm"><div class="w">
-<div class="sl rv">COMMUNITY</div>
-<h2 class="st rv">加入台灣拉麵圈</h2>
-<div class="cg">
-<div class="cc rv"><h3>🏛️ 台灣拉麵協會</h3><p class="cc-d">2025年8月成立，300+ 收錄店家，22 縣市覆蓋。</p><div class="cc-s"><span><strong>300+</strong> 店家</span><span><strong>22</strong> 縣市</span></div><a href="https://taiwan-ramen-association.github.io" target="_blank" class="cc-l">官網 →</a></div>
-<div class="cc rv"><h3>👥 台灣拉麵愛好會</h3><p class="cc-d">Facebook 最大拉麵社團，9萬+ 粉絲，每年舉辦金賞票選。</p><div class="cc-s"><span><strong>9萬+</strong> 粉絲</span><span><strong>5萬+</strong> 社團</span></div><a href="https://www.facebook.com/groups/RamenTW/" target="_blank" class="cc-l">FB 社團 →</a></div>
-<div class="cc rv"><h3>🗺️ 拉麵地圖</h3><p class="cc-d">全台 1071 家拉麵店標記，顏色區分湯頭，可直接導航。</p><div class="cc-s"><span><strong>1071</strong> 家</span><span><strong>100萬+</strong> 瀏覽</span></div><a href="http://tinyurl.com/p6e9u8l" target="_blank" class="cc-l">開啟地圖 →</a></div>
-</div>
+<div id="sentinel" style="height:20px; width:100%; margin-top:20px"></div>
 </div></section>
 
 <footer><div class="w">
 <div class="fg">
 <div><div class="fb-r">🍜 麵魂 MIAN-HUN</div><p class="fb-d">從一碗麵開始，成為台灣拉麵職人。開源拉麵資料庫，歡迎貢獻。</p></div>
-<div><h4>探索</h4><a href="#broth">湯頭圖鑑</a><a href="#finder">店家搜尋</a><a href="#know">拉麵百科</a><a href="#golden">金賞殿堂</a></div>
+<div><h4>探索</h4><a href="#broth">湯頭圖鑑</a><a href="#know">拉麵百科</a><a href="#finder">店家搜尋</a></div>
 <div><h4>社群</h4><a href="https://taiwan-ramen-association.github.io" target="_blank">台灣拉麵協會</a><a href="https://www.facebook.com/groups/RamenTW/" target="_blank">拉麵愛好會 FB</a><a href="https://www.instagram.com/twramen.assoc/" target="_blank">IG @twramen.assoc</a></div>
-<div><h4>資料</h4><a href="ramen-database.json" download>JSON 資料庫</a><a href="ramen-shops.csv" download>CSV 資料</a></div>
+<div><h4>資料</h4><a href="../data/ramen-database.json" download>JSON 資料庫</a><a href="../data/ramen-shops.csv" download>CSV 資料</a></div>
 </div>
 <div class="fb-b">© 2025-2026 麵魂 MIAN-HUN · 資料來源為公開資訊 · <a href="SOURCES.md">完整出處</a></div>
 </div></footer>
 
 
 
+<script src="../data/shop-data.js"></script>
 <script>
-const S=[
-{n:'大角拉麵',c:'台北市',d:'大安區',b:["雞白湯", "醬油"],p:290,r:4.6,w:'免排隊',t:["雞湯", "免排"],s:'醬油焦香拉麵|大角擔擔麵',m:'忠孝敦化',bg:''},
-{n:'隱家拉麵 中山店',c:'台北市',d:'中山區',b:["雞白湯"],p:280,r:4.7,w:'30分',t:["柚香", "泡系"],s:'柚香雞白湯',m:'中山',bg:''},
-{n:'金龍 Taipei',c:'台北市',d:'大安區',b:["清湯", "鹽味"],p:350,r:4.8,w:'90分',t:["山椒", "排隊名店"],s:'山椒清湯拉麵',m:'忠孝復興',bg:''},
-{n:'牛浜',c:'桃園市',d:'中壢區',b:["牛骨", "雞白湯"],p:300,r:4.6,w:'20分',t:["牛骨", "稀有"],s:'牛骨拉麵|牛雞雙湯',m:'',bg:''},
-{n:'麵屋一燈 台灣',c:'台北市',d:'',b:["雞白湯", "魚介"],p:310,r:4.7,w:'45分',t:["日本來台", "魚介"],s:'濃厚魚介雞白湯',m:'',bg:''},
-{n:'勝王',c:'台北市',d:'',b:["創作", "限定"],p:320,r:4.9,w:'60分',t:["創作系", "限定"],s:'每日限定',m:'',bg:''},
-{n:'塩琉',c:'台北市',d:'',b:["鹽味"],p:260,r:4.5,w:'25分',t:["鹽味", "清爽"],s:'鹽味拉麵',m:'',bg:''},
-{n:'麵屋武藏 台灣',c:'台北市',d:'',b:["豚骨", "魚介"],p:320,r:4.4,w:'30分',t:["豚骨魚介", "日本品牌"],s:'武藏拉麵',m:'',bg:''},
-{n:'勝王',c:'台北市',d:'中山區',b:["創作", "限定"],p:320,r:4.9,w:'60分',t:["三連霸冠軍", "創作系"],s:'每日限定|烹星',m:'中山',bg:'🔥 人氣'},
-{n:'鳥人拉麵 台灣總店',c:'台北市',d:'大安區',b:["雞白湯"],p:280,r:4.6,w:'30分',t:["紐約來台", "雞白湯"],s:'特製鳥人白湯|辛白湯',m:'忠孝復興',bg:''},
-{n:'麵屋一燈',c:'台北市',d:'中山區',b:["雞白湯", "魚介"],p:310,r:4.7,w:'45分',t:["日本來台", "魚介"],s:'濃厚魚介雞白湯',m:'中山',bg:''},
-{n:'一風堂',c:'台北市',d:'中山區',b:["豚骨"],p:290,r:4.3,w:'20分',t:["連鎖", "豚骨"],s:'白丸|赤丸',m:'中山',bg:''},
-{n:'屯京拉麵',c:'台北市',d:'中山區',b:["豚骨", "味噌"],p:260,r:4.2,w:'15分',t:["連鎖", "東京風"],s:'東京豚骨',m:'中山',bg:''},
-{n:'麺屋千雲',c:'台北市',d:'中山區',b:["雞白湯", "煮干"],p:300,r:4.5,w:'25分',t:["深夜", "煮干"],s:'雞白湯',m:'中山',bg:''},
-{n:'柑橘Shinn-Soba',c:'台北市',d:'大安區',b:["雞清湯", "蛤蜊"],p:310,r:4.7,w:'40分',t:["清湯", "柑橘"],s:'柑橘雞湯|蛤蜊拉麵',m:'',bg:''},
-{n:'らーめん七面鳥',c:'台中市',d:'西區',b:["雞白湯", "濃厚"],p:270,r:4.8,w:'40分',t:["台中名店", "雞白湯"],s:'雞白湯',m:'',bg:''},
-{n:'鮭の大助',c:'台中市',d:'西區',b:["魚介", "鮭魚"],p:300,r:4.7,w:'30分',t:["鮭魚", "七面鳥二店"],s:'特濃鮭白湯',m:'',bg:''},
-{n:'蝦蝦拉麵 元氣屋',c:'台中市',d:'西區',b:["蝦", "魚介"],p:280,r:4.6,w:'35分',t:["蝦湯", "沾麵"],s:'濃厚蝦蝦沾麵',m:'',bg:''},
-{n:'有囍拉麵 中山店',c:'台中市',d:'中區',b:["豚骨", "雞白湯"],p:250,r:4.4,w:'20分',t:["台中", "平價"],s:'豚骨拉麵',m:'',bg:''},
-{n:'牛庵',c:'台中市',d:'',b:["牛骨", "咖哩"],p:290,r:4.5,w:'25分',t:["牛骨", "咖哩"],s:'咖哩牛骨拉麵',m:'',bg:''},
-{n:'RAMEN初',c:'高雄市',d:'三民區',b:["豚骨"],p:250,r:4.6,w:'25分',t:["高雄四大天王", "蔥拉麵"],s:'蔥豚骨拉麵',m:'',bg:''},
-{n:'初代花山',c:'高雄市',d:'左營區',b:["牛骨"],p:310,r:4.7,w:'30分',t:["牛骨", "高雄名店"],s:'牛骨白湯|咖哩牛骨沾麵',m:'',bg:''},
-{n:'一本拉麵',c:'高雄市',d:'新興區',b:["雞白湯"],p:270,r:4.5,w:'20分',t:["雞白湯", "濃厚"],s:'濃厚雞白湯',m:'',bg:''},
-{n:'臥龍拉麵',c:'高雄市',d:'前鎮區',b:["豚骨", "味噌", "客製"],p:240,r:4.3,w:'15分',t:["客製化", "調味粉"],s:'客製化拉麵',m:'',bg:''},
-{n:'埔里橫濱拉麵',c:'南投縣',d:'埔里鎮',b:["豚骨", "醬油"],p:220,r:4.4,w:'30分',t:["南投", "埔里"],s:'',m:'',bg:''},
-{n:'宜蘭拉麵代表',c:'宜蘭縣',d:'',b:["魚介", "豚骨"],p:280,r:4.5,w:'',t:["宜蘭", "魚介"],s:'鯛魚拉麵|豆乳拉麵',m:'',bg:''},
-{n:'Nagi豚骨拉麵凪',c:'台北市',d:'大安區',b:["豚骨"],p:280,r:4.5,w:'20分',t:["豚王", "黑王"],s:'',m:'',bg:''},
-{n:'鷹流拉麵',c:'台北市',d:'',b:["豚骨", "醬油"],p:260,r:4.6,w:'20分',t:["台灣拉麵教父", "40+品牌"],s:'',m:'',bg:''},
-{n:'麵屋三士',c:'台北市',d:'',b:["雞白湯"],p:290,r:4.5,w:'20分',t:[],s:'',m:'',bg:''},
-{n:'拉麵吉',c:'台北市',d:'',b:["豚骨"],p:250,r:4.4,w:'20分',t:[],s:'',m:'',bg:''},
-{n:'隱家拉麵',c:'新竹市',d:'',b:["雞白湯"],p:280,r:4.5,w:'20分',t:[],s:'',m:'',bg:''},
-{n:'千璽 鶏パイタン專門',c:'台中市',d:'',b:["雞白湯"],p:270,r:4.6,w:'20分',t:[],s:'',m:'',bg:''},
-{n:'Kitaho 北穗製麵所',c:'台中市',d:'',b:["豚骨", "雞白"],p:260,r:4.5,w:'20分',t:[],s:'',m:'',bg:''},
-{n:'麵屋清流',c:'台中市',d:'',b:["魚介", "豚骨"],p:280,r:4.4,w:'20分',t:[],s:'',m:'',bg:''},
-{n:'赤熊拉麵',c:'台中市',d:'',b:["味噌", "豚骨"],p:250,r:4.3,w:'20分',t:[],s:'',m:'',bg:''},
-{n:'大王具足蟲拉麵',c:'高雄市',d:'',b:["創意"],p:350,r:4.2,w:'20分',t:["話題", "具足蟲"],s:'',m:'',bg:''},
-{n:'桃園拉麵群',c:'桃園市',d:'',b:["多元"],p:260,r:4.3,w:'20分',t:[],s:'',m:'',bg:''},
-{n:'台南拉麵群',c:'台南市',d:'',b:["豚骨", "雞白"],p:250,r:4.3,w:'20分',t:[],s:'',m:'',bg:''},
-{n:'新竹拉麵群',c:'新竹市',d:'',b:["多元"],p:270,r:4.4,w:'20分',t:[],s:'',m:'',bg:''},
-{n:'一蘭拉麵 台灣台北本店',c:'台北市',d:'信義區',b:["豚骨"],p:300,r:4.3,w:'30分',t:["24小時", "連鎖"],s:'天然豚骨拉麵|秘傳辣醬',m:'市政府',bg:''},
-{n:'一幻拉麵 台北信義店',c:'台北市',d:'信義區',b:["蝦", "味噌", "鹽味", "醬油"],p:250,r:4.4,w:'20分',t:["蝦系", "北海道"],s:'鮮蝦味噌|鮮蝦鹽味',m:'市政府',bg:''},
-{n:'山嵐拉麵 公館店',c:'台北市',d:'中正區',b:["豚骨", "味噌"],p:270,r:4.5,w:'30分',t:["北海道札幌", "客製化"],s:'白湯|赤湯',m:'公館',bg:''},
-{n:'墨洋拉麵',c:'台北市',d:'中正區',b:["雞白湯", "豚骨"],p:240,r:4.5,w:'25分',t:["泡系", "免費加麵"],s:'泡系雞豚拉麵',m:'公館',bg:''},
-{n:'麵屋緣 enishi',c:'台北市',d:'大安區',b:["醬油", "創作"],p:310,r:4.6,w:'25分',t:["京都名店", "沾麵"],s:'白Carbonara沾麵',m:'六張犁',bg:''},
-{n:'金沢拉麵',c:'台北市',d:'中山區',b:["醬油", "鹽味"],p:190,r:4.5,w:'20分',t:["CP值王", "免費加麵加飯"],s:'醬油拉麵',m:'中山國小',bg:''},
-{n:'豚人拉麵',c:'台北市',d:'大安區',b:["豚骨"],p:250,r:4.3,w:'15分',t:["免費加麵"],s:'濃郁豚骨拉麵',m:'忠孝敦化',bg:''},
-{n:'二屋牡蠣拉麵',c:'台北市',d:'大同區',b:["牡蠣", "雞白湯"],p:280,r:4.5,w:'25分',t:["牡蠣系", "無限加麵"],s:'濃厚牡蠣湯頭',m:'雙連',bg:''},
-{n:'麵屋雞金',c:'台北市',d:'中正區',b:["雞白湯", "醬油"],p:250,r:4.3,w:'10分',t:["深夜", "五之神系"],s:'雞白湯拉麵|醬油魚介拉麵',m:'忠孝新生',bg:''},
-{n:'長生塩人',c:'台北市',d:'士林區',b:["鹽味", "醬油"],p:170,r:4.3,w:'15分',t:["深夜", "平價"],s:'鹽味拉麵|醬油拉麵',m:'芝山',bg:''},
-{n:'麵屋和創',c:'台北市',d:'松山區',b:["醬油", "鹽味", "味噌"],p:190,r:4.5,w:'30分',t:["深夜", "鷹流系"],s:'生薑清湯拉麵',m:'小巨蛋',bg:''},
-{n:'森麵堂',c:'台北市',d:'內湖區',b:["雞白湯"],p:310,r:4.7,w:'30分',t:["米其林", "內湖"],s:'米其林級雞白湯',m:'—',bg:'🌟 米其林'},
-{n:'雞二拉麵',c:'台北市',d:'大安區',b:["雞白湯"],p:240,r:4.4,w:'15分',t:["大份量", "客製化"],s:'大雞(超大碗)|小雞',m:'信義安和',bg:''},
-{n:'旨燕泡系拉麵',c:'台北市',d:'中正區',b:["泡系", "鹽味"],p:270,r:4.5,w:'15分',t:["泡系", "清新"],s:'旨燕禽白湯|鰹節溏心蛋',m:'西門',bg:''},
-{n:'烹星',c:'台北市',d:'中山區',b:["乾物清湯", "濃湯"],p:310,r:4.6,w:'30分',t:["2021新人王", "勝王系"],s:'乾物清湯拉麵',m:'中山',bg:''},
-{n:'天鷄麵屋坊',c:'台北市',d:'中山區',b:["雞白湯"],p:290,r:4.4,w:'15分',t:["CP值"],s:'雞豬鴨+干貝+鮭魚卵',m:'中山',bg:''},
-{n:'五之神製作所',c:'台北市',d:'信義區',b:["蝦", "豚骨"],p:250,r:4.6,w:'25分',t:["蝦系", "東京名店"],s:'濃厚豚骨蝦沾麵|龍蝦沾麵',m:'市政府',bg:'⭐ 金賞'},
-{n:'辰拉麵',c:'新北市',d:'永和區',b:["鹽味", "醬油", "豚骨醬油"],p:270,r:4.6,w:'30分',t:["鷹流弟子", "現場登記"],s:'醬油豚骨拉麵|大滿足',m:'頂溪',bg:''},
-{n:'好呷拉麵 板橋三民店',c:'新北市',d:'板橋區',b:["豚骨"],p:160,r:4.4,w:'25分',t:["無限續麵", "甜點吃到飽"],s:'日本生拉麵|豚骨拉麵',m:'新埔',bg:''},
-{n:'懸日拉',c:'新北市',d:'板橋區',b:["水果系"],p:280,r:4.5,w:'30分',t:["獨特", "水果"],s:'水果系拉麵',m:'板橋',bg:''},
-{n:'狸匠拉麵 深夜拉麵',c:'台中市',d:'',b:["多元"],p:250,r:4.5,w:'20分',t:["深夜", "大盛"],s:'大盛系列',m:'—',bg:''},
-{n:'山下公園',c:'台中市',d:'西區',b:["雞白湯"],p:280,r:4.7,w:'30分',t:["金賞", "有囍姊妹店"],s:'濃郁雞白湯|季節限定',m:'—',bg:'⭐ 金賞'},
-{n:'千璽拉麵',c:'台中市',d:'西區',b:["鹽味", "醬油", "味噌"],p:200,r:4.4,w:'20分',t:["金典綠園道"],s:'鹽味雞豚清湯|辛口豚雞濃湯',m:'—',bg:''},
-{n:'山下公園 台北',c:'台北市',d:'',b:["雞白湯"],p:290,r:4.6,w:'30分',t:["金賞", "泡系"],s:'泡系白湯',m:'—',bg:'⭐ 金賞'},
-{n:'雞吉君拉麵 西門店',c:'台北市',d:'萬華區',b:["雞白湯", "辣味噌"],p:280,r:4.5,w:'25分',t:["金賞", "西門"],s:'辣雞白湯|濃度雞白湯',m:'西門',bg:'⭐ 金賞'},
-{n:'吞山郎 二郎風拉麵',c:'台中市',d:'',b:["豚骨", "二郎系"],p:260,r:4.4,w:'20分',t:["二郎系", "大份量"],s:'二郎風拉麵',m:'—',bg:''},
-{n:'山形心心拉麵 士林店',c:'台北市',d:'士林區',b:["醬油", "鹽味", "味噌"],p:220,r:4.4,w:'20分',t:["日本師傅", "平價"],s:'山形辛味噌拉麵|二郎系男氣拉麵',m:'劍潭',bg:''},
-{n:'一樂拉麵 信義旗艦店',c:'台北市',d:'信義區',b:["豚骨", "醬油"],p:330,r:4.2,w:'40分',t:["火影忍者", "IP聯名"],s:'火影忍者官方拉麵',m:'市政府',bg:''},
-{n:'特濃屋',c:'台北市',d:'大安區',b:["豚骨醬油"],p:260,r:4.4,w:'15分',t:["家系", "日本人老闆"],s:'橫濱家系拉麵',m:'信義安和',bg:''},
-{n:'麵屋堂本',c:'桃園市',d:'中壢區',b:["多元"],p:220,r:4.4,w:'15分',t:["免費續麵", "客製化"],s:'客製化拉麵',m:'—',bg:''},
-{n:'大王拉麵',c:'高雄市',d:'',b:["豚骨"],p:250,r:4.4,w:'15分',t:[],s:'豚骨拉麵',m:'—',bg:''},
-{n:'淳鳩一夫日式拉麵',c:'台南市',d:'中西區',b:["雞白湯", "魚介"],p:280,r:4.6,w:'30分',t:["Dcard熱推", "台南第一"],s:'蒜味雞白湯|黑金蛤蜊雞白湯',m:'',bg:'🔥 人氣'},
-{n:'俺の豚',c:'台南市',d:'永康區',b:["豚骨"],p:200,r:4.5,w:'30分',t:["永康必吃", "濃厚系"],s:'超濃厚豚骨拉麵',m:'',bg:''},
-{n:'漣戶拉麵',c:'台南市',d:'東區',b:["豚骨", "煮干"],p:240,r:4.4,w:'15分',t:["濃厚系", "煮干"],s:'激厚醬油豚骨|煮干拉麵',m:'',bg:''},
-{n:'吾私拉麵',c:'台南市',d:'北區',b:["雞白湯"],p:190,r:4.5,w:'20分',t:["每日限量30碗", "攤車"],s:'黑金蛤蜊雞白湯|濃郁雞白湯',m:'',bg:''},
-{n:'白露拉麵 Bailu Ramen',c:'台南市',d:'',b:["雞白湯"],p:280,r:4.6,w:'20分',t:["文青", "米其林級薩索雞"],s:'薩索雞雞白湯',m:'',bg:'🌟 米其林'},
-{n:'麵家宇味',c:'台南市',d:'中西區',b:["豚骨", "魚介"],p:250,r:4.5,w:'20分',t:["西門路人氣"],s:'豚骨魚介拉麵|濃厚豚雞拉麵',m:'',bg:''},
-{n:'Nani麵',c:'台南市',d:'中西區',b:["醬油", "多元"],p:250,r:4.4,w:'15分',t:["沾麵", "新美街"],s:'日式沾麵',m:'',bg:''},
-{n:'双赫日式拉麵',c:'台南市',d:'中西區',b:["鹽味", "蝦"],p:250,r:4.4,w:'15分',t:["日式裝潢"],s:'柚子鹽拉麵|櫻花蝦拉麵',m:'',bg:''},
-{n:'麵屋浩 Hiroshi',c:'新竹市',d:'北區',b:["豚骨"],p:260,r:4.7,w:'60分',t:["新竹最強", "限量"],s:'濃湯SP|清湯醬油拉麵',m:'',bg:'🔥 人氣'},
-{n:'Hiro\'s らぁ麵 Kitchen 新竹',c:'新竹市',d:'東區',b:["豚骨", "雞白湯"],p:320,r:4.7,w:'45分',t:["職人級", "每週只開兩天"],s:'每日限定湯頭|炙燒叉燒壽司捲',m:'',bg:''},
-{n:'神虎拉麵',c:'新竹市',d:'北區',b:["豚骨"],p:260,r:4.5,w:'20分',t:["大阪直傳", "深夜到12點"],s:'原味豚骨|味噌豚骨',m:'',bg:''},
-{n:'大角拉麵 新竹東門市場',c:'新竹市',d:'東區',b:["雞清湯", "豚骨"],p:250,r:4.6,w:'15分',t:["淡麗系", "日籍主廚"],s:'雞清湯鹽味柚香拉麵|醬油拉麵',m:'',bg:''},
-{n:'麵屋吉光',c:'新竹市',d:'東區',b:["豚骨"],p:280,r:4.6,w:'40分',t:["關新路", "排隊名店"],s:'特盛豚骨拉麵',m:'',bg:''},
-{n:'嵐沺拉麵',c:'新竹市',d:'',b:["豚骨", "味噌"],p:250,r:4.5,w:'15分',t:["造型蛋", "客製化"],s:'叉燒豚骨拉麵|造型溏心蛋',m:'',bg:''},
-{n:'涼太拉麵',c:'新竹縣',d:'竹北市',b:["豚骨", "魚介"],p:260,r:4.5,w:'15分',t:["東京はやし家系", "精燉18小時"],s:'涼太特製拉麵',m:'',bg:''},
-{n:'横浜家系ラーメン拉麵家',c:'新竹市',d:'東區',b:["豚骨醬油", "魚介"],p:250,r:4.4,w:'15分',t:["家系", "日本人主理"],s:'家系拉麵|沾麵',m:'',bg:''},
-{n:'麵家鳥猿',c:'新竹縣',d:'竹北市',b:["雞白湯", "雞清湯"],p:260,r:4.5,w:'15分',t:["雞湯專門", "牡蠣"],s:'雞貝清湯拉麵',m:'',bg:''},
-{n:'拉麵 豚鷄魚',c:'新竹市',d:'東區',b:["雞白湯", "醬油"],p:260,r:4.5,w:'15分',t:["關新路", "粗麵必吃"],s:'白湯粗麵|松露醬油',m:'',bg:''},
-{n:'麵屋。濃',c:'新北市',d:'林口區',b:["豚骨", "多元"],p:240,r:4.5,w:'20分',t:["林口", "限量"],s:'嚴選夢幻麵條|每日限量口味',m:'',bg:''},
-{n:'寫樂拉麵',c:'新竹市',d:'東區',b:["豚骨", "醬油"],p:240,r:4.3,w:'10分',t:["老字號", "多元菜單"],s:'叉燒拉麵|定食',m:'',bg:''},
-{n:'千璽拉麵(資料更新)',c:'台中市',d:'西區',b:["鹽味", "醬油", "味噌"],p:200,r:4.4,w:'15分',t:["金典綠園道", "平價"],s:'鹽味雞豚清湯$190|醬油雞豚清湯$190',m:'',bg:''},
-{n:'菜良日式拉麵',c:'台南市',d:'東區',b:["豚骨醬油", "二郎系"],p:240,r:4.3,w:'15分',t:["二郎系", "大份量"],s:'二郎系拉麵|沾麵',m:'',bg:''},
-{n:'山形心心拉麵 高雄店',c:'高雄市',d:'',b:["醬油", "鹽味", "味噌"],p:220,r:4.3,w:'15分',t:["日本師傅", "平價"],s:'山形辛味噌拉麵|二郎系男氣拉麵',m:'',bg:''},
-{n:'麵屋祥',c:'高雄市',d:'鼓山區',b:["豚骨"],p:240,r:4.6,w:'30分',t:["排隊名店", "客製化"],s:'濃湯叉燒拉麵|清湯拉麵',m:'凹子底',bg:''},
-{n:'叢林拉麵',c:'高雄市',d:'新興區',b:["豚骨", "味噌", "醬油"],p:140,r:4.3,w:'10分',t:["深夜", "平價"],s:'博多豚骨|札幌味噌',m:'中央公園',bg:''},
-{n:'中村製麵',c:'高雄市',d:'苓雅區',b:["雞白湯", "鹽味"],p:240,r:4.5,w:'15分',t:["漢神對面", "期間限定"],s:'中村拉麵(雞白湯)|塩拉麵',m:'三多商圈',bg:''},
-{n:'田介拉麵',c:'高雄市',d:'鹽埕區',b:["豚骨", "醬油"],p:220,r:4.5,w:'15分',t:["鹽埕", "限量"],s:'蔥山豚骨醬油拉麵|熊本黑蒜豚骨鹽醬',m:'鹽埕埔',bg:''},
-{n:'田介二郎',c:'高雄市',d:'新興區',b:["豚骨醬油", "二郎系"],p:250,r:4.4,w:'15分',t:["二郎系", "新堀江"],s:'橫網大二郎(4倍份量)|九州濃豚骨',m:'中央公園',bg:''},
-{n:'Men On Soup 雞白湯拉麵',c:'高雄市',d:'左營區',b:["雞白湯"],p:260,r:4.5,w:'15分',t:["文青", "點餐機"],s:'原味雞白湯|滿足版(肉增量2倍)',m:'凹子底',bg:''},
-{n:'瀧澤軒食堂',c:'高雄市',d:'苓雅區',b:["豚骨", "雞清湯", "雞白湯"],p:240,r:4.4,w:'10分',t:["8年老店", "三種系統"],s:'博多豚骨|柚子塩雞清湯',m:'文化中心',bg:''},
-{n:'晴拉麵',c:'高雄市',d:'苓雅區',b:["豚骨", "醬油", "味噌"],p:170,r:4.3,w:'10分',t:["平價", "客製化"],s:'豚骨拉麵|地獄拉麵',m:'五塊厝',bg:''},
-{n:'研田拉麵',c:'高雄市',d:'鼓山區',b:["雞白湯", "醬油", "鹽味"],p:260,r:4.5,w:'15分',t:["雞骨專門", "季節限定"],s:'雞白濃湯|雞白醬油',m:'—',bg:''},
-{n:'金田家 台灣本店',c:'高雄市',d:'左營區',b:["豚骨"],p:260,r:4.5,w:'20分',t:["福岡元祖", "泡系"],s:'九州泡系豚骨拉麵',m:'巨蛋',bg:''},
-{n:'火山湯海',c:'高雄市',d:'左營區',b:["辣麻味噌"],p:280,r:4.5,w:'20分',t:["鬼金棒傳人"],s:'辣麻味噌拉麵',m:'巨蛋',bg:''},
-{n:'大海拉麵 高雄店',c:'高雄市',d:'前鎮區',b:["豚骨"],p:200,r:4.5,w:'15分',t:["日本人老闆", "博多道地"],s:'蔥拉麵|熊本黑蒜拉麵(高雄限定)',m:'三多商圈',bg:''},
-{n:'一蘭拉麵 桃園華泰店',c:'桃園市',d:'中壢區',b:["豚骨"],p:300,r:4.3,w:'30分',t:["一蘭", "Outlet"],s:'天然豚骨拉麵',m:'—',bg:''},
-{n:'一風堂 桃園店',c:'桃園市',d:'桃園區',b:["豚骨"],p:290,r:4.3,w:'20分',t:["連鎖", "博多"],s:'白丸|赤丸',m:'—',bg:''},
-{n:'麵屋高(泡系)',c:'高雄市',d:'新興區',b:["豚骨"],p:250,r:4.4,w:'15分',t:["泡系", "日籍師傅"],s:'泡系豚骨拉麵',m:'美麗島',bg:''},
-{n:'一本拉麵·梟',c:'高雄市',d:'苓雅區',b:["雞白湯", "豚骨"],p:260,r:4.4,w:'15分',t:["文青", "清爽"],s:'雞白湯拉麵|蔬菜拉麵',m:'—',bg:''},
-{n:'清流房日式拉麵',c:'高雄市',d:'鼓山區',b:["豚骨", "辣味噌"],p:240,r:4.4,w:'10分',t:["美術館", "免費加麵"],s:'博多雞豚拉麵|鬼獄辛辣拉麵',m:'—',bg:''},
-{n:'拉麵天滿',c:'高雄市',d:'苓雅區',b:["雞白湯"],p:250,r:4.5,w:'15分',t:["泡沫系", "楠梓→南高雄"],s:'泡沫系雞白湯',m:'—',bg:''},
-{n:'幸花雞白湯 高雄店',c:'高雄市',d:'新興區',b:["雞白湯"],p:180,r:4.3,w:'10分',t:["全台連鎖", "平價"],s:'鹽味|醬油',m:'信義國小',bg:''},
-{n:'一蘭拉麵 台中朝富店',c:'台中市',d:'西屯區',b:["豚骨"],p:300,r:4.3,w:'30分',t:["一蘭", "三號店"],s:'天然豚骨拉麵',m:'—',bg:''},
-{n:'赤熊拉麵',c:'台中市',d:'',b:["豚骨", "味噌"],p:250,r:4.4,w:'15分',t:[],s:'濃厚豚骨|辛味噌',m:'—',bg:''},
-{n:'北穗製麵所',c:'台中市',d:'',b:["豚骨", "醬油"],p:250,r:4.4,w:'15分',t:["自家製麵"],s:'自家製麵',m:'—',bg:''},
-{n:'定置漁場三代目',c:'花蓮縣',d:'花蓮市',b:["魚骨白湯"],p:300,r:4.3,w:'40分',t:["花蓮排隊王", "免費加麵加湯"],s:'柚子胡椒麵|叉燒沾麵',m:'',bg:'🔥 人氣'},
-{n:'黑潮拉麵·炸串專賣',c:'花蓮縣',d:'花蓮市',b:["豚骨"],p:200,r:4.3,w:'20分',t:["可調濃淡軟硬"],s:'黑蒜拉麵',m:'',bg:''},
-{n:'匠心食堂拉麵屋',c:'花蓮縣',d:'花蓮市',b:["豚骨", "牛豚骨"],p:240,r:4.3,w:'20分',t:["花蓮第一間拉麵專賣"],s:'牛豚骨拉麵',m:'',bg:'🔥 人氣'},
-{n:'雞白郎拉麵',c:'花蓮縣',d:'花蓮市',b:["雞白湯", "魚介雞清湯"],p:265,r:4.4,w:'30分',t:["每日限量50碗", "黑潮姊妹店"],s:'泡系雞白湯拉麵',m:'',bg:''},
-{n:'麵屋真打',c:'花蓮縣',d:'花蓮市',b:["豚骨"],p:200,r:4.2,w:'20分',t:["免費加麵", "2023新開幕"],s:'特盛蔥豚骨拉麵',m:'',bg:'🆕 新店'},
-{n:'麵屋小田',c:'花蓮縣',d:'花蓮市',b:["豚骨", "醬油豚骨"],p:160,r:4.2,w:'10分',t:["百元平價", "在地食材"],s:'博多豚骨拉麵|剝皮辣椒拉麵',m:'',bg:''},
-{n:'倉麵屋',c:'花蓮縣',d:'花蓮市',b:["豚骨", "味噌", "醬油"],p:150,r:4.2,w:'15分',t:["百元秒飛日本", "店貓"],s:'濃郁豚骨拉麵(限量)',m:'',bg:''},
-{n:'哈拉麵',c:'台東縣',d:'台東市',b:["豚骨"],p:170,r:4.7,w:'30分',t:["台東No.1", "免費加麵"],s:'厚切叉燒豚骨拉麵',m:'',bg:'🔥 人氣'},
-{n:'曙SHU拉麵',c:'台東縣',d:'台東市',b:["豚骨"],p:120,r:4.5,w:'15分',t:["台東最美", "十年老店"],s:'招牌拉麵|限量乾咖哩',m:'',bg:''},
-{n:'哩麵',c:'台東縣',d:'台東市',b:["大骨蔬菜"],p:145,r:4.3,w:'10分',t:["動漫風", "寵物友善"],s:'味噌拉麵|咖哩飯',m:'',bg:''},
-{n:'山越拉麵',c:'嘉義市',d:'東區',b:["豚骨", "雞清湯"],p:200,r:4.5,w:'15分',t:["嘉義排隊王", "每日不同湯底"],s:'皆傳家鹽味豚骨|濃厚蝦蝦豚骨',m:'',bg:'🔥 人氣'},
-{n:'將屋拉麵 嘉義店',c:'嘉義市',d:'西區',b:["雞白湯"],p:240,r:4.8,w:'10分',t:["嘉義評分最高", "泡系"],s:'泡系招牌雞白湯|澎湃白湯二郎',m:'',bg:''},
-{n:'吾妻拉麵',c:'嘉義市',d:'西區',b:["雞白湯"],p:180,r:4.5,w:'10分',t:["限量", "攤車"],s:'原味雞白湯|蒜計蛤蠣雞白湯',m:'',bg:''},
-{n:'山崎拉麵',c:'嘉義市',d:'西區',b:["豚骨", "醬油", "味噌"],p:175,r:4.3,w:'5分',t:["日本人老闆", "東京正宗"],s:'黑豚骨拉麵|關東煮',m:'',bg:''},
-{n:'麺屋木心',c:'嘉義市',d:'西區',b:["醬油", "煮干"],p:185,r:4.7,w:'25分',t:["師承東京", "巷弄限量"],s:'醬油煮干拉麵',m:'',bg:''},
-{n:'Mr.RAMEN 嘉義店',c:'嘉義市',d:'西區',b:["豚骨"],p:200,r:4.5,w:'5分',t:["日本社長連鎖", "客製化"],s:'超級Mr拉麵|大蒜拉麵',m:'',bg:''},
-{n:'瀧野拉麵(家系)',c:'嘉義市',d:'東區',b:["豚骨醬油"],p:230,r:4.4,w:'5分',t:["家系", "免費加麵"],s:'橫濱家系豚骨|熊本黑蒜豚骨',m:'',bg:''},
-{n:'將屋拉麵 斗六總店',c:'雲林縣',d:'斗六市',b:["雞白湯"],p:240,r:4.7,w:'15分',t:["斗六指標", "免費加麵"],s:'泡系雞白湯|辛雞白濃湯',m:'',bg:''},
-{n:'京軒麵屋',c:'雲林縣',d:'斗六市',b:["豚骨", "二郎系", "沾麵"],p:230,r:4.5,w:'10分',t:["二郎系", "太平老街"],s:'二郎蒜香沾麵|特盛拉麵',m:'',bg:''},
-{n:'麵屋三豚',c:'雲林縣',d:'斗六市',b:["豚骨"],p:220,r:4.6,w:'15分',t:["僅8席", "老闆赴日"],s:'焦蒜鹽味拉麵|叉燒飯',m:'',bg:''},
-{n:'定置漁場三代目(正濱店)',c:'基隆市',d:'中正區',b:["魚白湯"],p:280,r:4.0,w:'25分',t:["正濱漁港", "基隆限定"],s:'炭燒小卷墨魚拉麵(基隆限定)',m:'',bg:''},
-{n:'羽都麵屋',c:'基隆市',d:'仁愛區',b:["雞白湯"],p:215,r:4.5,w:'10分',t:["僅6席", "前森拉麵主廚"],s:'雞白湯味噌|冷沾麵(夏限)',m:'',bg:''},
-{n:'月見拉麵',c:'基隆市',d:'仁愛區',b:["鹽味豚骨"],p:175,r:4.0,w:'15分',t:["廟口旁", "豬腳獨創"],s:'豬腳拉麵|鹽味豚骨拉麵',m:'',bg:''},
-{n:'川崎拉麵',c:'基隆市',d:'仁愛區',b:["豚骨", "醬油", "味噌", "麻辣"],p:175,r:3.9,w:'免排隊',t:["免費飲品冰淇淋", "CP值"],s:'京都豚骨|蝦王拉麵(10隻蝦)',m:'',bg:''},
-{n:'鬼匠拉麵(廟口店)',c:'基隆市',d:'仁愛區',b:["豚骨"],p:180,r:4.0,w:'5分',t:["廟口", "連鎖"],s:'豚骨拉麵|味噌拉麵',m:'',bg:''},
-{n:'目黑拉麵',c:'屏東縣',d:'屏東市',b:["豚骨", "味噌", "鹽味"],p:200,r:4.4,w:'10分',t:["日本老闆", "接近一蘭"],s:'鹽味豚骨|叉燒味噌拉麵',m:'',bg:''},
-{n:'拉麵橫山家(屏東店)',c:'屏東縣',d:'屏東市',b:["豚骨", "醬油"],p:260,r:4.7,w:'15分',t:["日本老闆台灣太太", "職人町"],s:'秘製豚骨|極釀醬油拉麵',m:'',bg:''},
-{n:'八幡拉麵',c:'屏東縣',d:'屏東市',b:["豚雞湯", "醬油"],p:200,r:4.3,w:'10分',t:["加麵僅20元"],s:'海老辛味噌|柚子胡椒雞白湯',m:'',bg:''},
-{n:'梓村麵屋',c:'屏東縣',d:'屏東市',b:["雞白湯"],p:200,r:4.3,w:'10分',t:["60年代復古風", "深夜23:30"],s:'辣味噌拉麵|秘炙醬油拉麵',m:'',bg:''},
-{n:'雲鶴拉麵',c:'屏東縣',d:'恆春鎮',b:["豚骨"],p:225,r:4.5,w:'15分',t:["恆春排隊", "墾丁必吃"],s:'蔥浪拉麵|黑目厚叉燒拉麵',m:'',bg:''},
-{n:'原山拉麵',c:'彰化縣',d:'彰化市',b:["鴨白湯", "鴨清湯"],p:155,r:4.6,w:'30分',t:["鴨湯專賣", "佛心價130元"],s:'鴨白女湯拉麵|日式叉燒飯',m:'',bg:''},
-{n:'雁歸 雞湯拉麵',c:'彰化縣',d:'彰化市',b:["雞白湯", "鹽味雞湯"],p:200,r:4.4,w:'15分',t:["巷弄日式", "浮世繪"],s:'松露雞白湯|柚香清雞湯',m:'',bg:''},
-{n:'角屋拉麵',c:'彰化縣',d:'員林市',b:["豚骨"],p:230,r:4.5,w:'15分',t:["赴日靜岡拜師", "近十年"],s:'魔物燒豚拉麵(月限定)|赤丸拉麵',m:'',bg:''},
-{n:'長生塩人(員林店)',c:'彰化縣',d:'員林市',b:["鹽味", "醬油", "味噌"],p:155,r:4.4,w:'40分',t:["僅8席", "深夜"],s:'招牌鹽味拉麵|辣味肉醬拉麵',m:'',bg:''},
-{n:'幸花雞白湯(員林店)',c:'彰化縣',d:'員林市',b:["雞白湯"],p:190,r:4.2,w:'10分',t:["10小時熬煮", "八種口味"],s:'松露干貝拉麵|地獄火拉麵',m:'',bg:''},
-{n:'麵魂家',c:'宜蘭縣',d:'羅東鎮',b:["豚骨"],p:200,r:4.4,w:'30分',t:["東海岸最強豚骨", "食尚玩家"],s:'魂白(濃厚白湯)|魂黑(黑麻油豚骨)',m:'',bg:'🔥 人氣'},
-{n:'屋台拉麵',c:'宜蘭縣',d:'頭城鎮',b:["豚骨", "醬油"],p:225,r:4.5,w:'20分',t:["柴火熬煮", "攤車"],s:'豚骨經典|黑蒜頭私房拉麵',m:'',bg:''},
-{n:'一心拉麵',c:'宜蘭縣',d:'羅東鎮',b:["豚骨"],p:200,r:4.3,w:'25分',t:["赴日學藝", "限量200碗"],s:'博多豚骨|三星玉蔥拉麵',m:'',bg:''},
-{n:'木村 Kimura',c:'宜蘭縣',d:'宜蘭市',b:["豚骨", "黑蒜"],p:200,r:4.5,w:'10分',t:["老宅文青", "伊豆傳承"],s:'暗黑系黑蒜拉麵|赤紅系拉麵',m:'',bg:''},
-{n:'樂山溫泉拉麵',c:'宜蘭縣',d:'礁溪鄉',b:["豚骨", "味噌"],p:230,r:3.8,w:'20分',t:["泡腳吃拉麵", "全台獨創"],s:'三星蔥豚骨|海鮮拉麵',m:'',bg:''},
-{n:'麵屋千穗',c:'苗栗縣',d:'苗栗市',b:["豚骨", "味噌", "醬油", "黑蒜"],p:195,r:4.5,w:'15分',t:["苗栗天花板", "免費加麵"],s:'火炙叉燒醬油白湯|櫻桃鴨胸豚骨',m:'',bg:''},
-{n:'麵屋有漁(頭份店)',c:'苗栗縣',d:'頭份市',b:["魚白湯", "蝦湯", "干貝醬油"],p:300,r:4.3,w:'20分',t:["全台最強魚介系", "石斑魚白湯"],s:'石斑魚白湯|卡布奇諾蝦湯拉麵',m:'',bg:'🔥 人氣'},
-{n:'原味優品拉麵',c:'苗栗縣',d:'苗栗市',b:["豚骨", "味噌", "魚介"],p:180,r:4.3,w:'10分',t:["在地十年", "飲料無限"],s:'魚介叉燒豚骨|札幌味增拉麵',m:'',bg:''},
-{n:'醉心拉麵',c:'新北市',d:'永和區',b:["雞白湯", "鹽味"],p:230,r:4.8,w:'20分',t:["三種叉燒", "原羅東名店"],s:'泡系雞白湯|櫻桃鴨清湯',m:'頂溪',bg:''},
-{n:'小高拉麵',c:'新北市',d:'中和區',b:["醬油豚骨", "麻辣豚骨"],p:140,r:4.5,w:'30分',t:["135元含叉燒溏心蛋", "無限加麵"],s:'醬油豚骨拉麵|麻辣豚骨',m:'南勢角',bg:''},
-{n:'炊煙拉麵 三重',c:'新北市',d:'三重區',b:["蛤蠣雞白湯", "鹽豚骨", "醬油豚骨"],p:220,r:4.5,w:'15分',t:["三種肉", "捷運1分"],s:'鹽味蛤蠣雞白湯|唐揚炸雞',m:'三重國小',bg:''},
-{n:'熊越岳',c:'新北市',d:'新莊區',b:["醬油"],p:280,r:4.6,w:'40分',t:["新莊最強", "每月9號百岳限定$200"],s:'清湯叉燒拉麵|百岳限定(每月9號)',m:'幸福',bg:'🔥 人氣'},
-{n:'青山製麵所',c:'新北市',d:'汐止區',b:["雞清湯"],p:190,r:4.4,w:'開門即滿',t:["2023新開", "清湯系"],s:'鹽味雞清湯|柚子鹽拉麵',m:'',bg:''},
-{n:'麵屋敬太 KEITA',c:'新北市',d:'淡水區',b:["煮干"],p:220,r:4.4,w:'15分',t:["日籍青森老闆", "澎湖丁香魚"],s:'煮干濃湯|背脂煮干清湯',m:'淡水',bg:''},
-{n:'双豚拉麵',c:'新北市',d:'板橋區',b:["醬油豚骨"],p:200,r:4.4,w:'20分',t:["鷹流蘭丸體系", "$99清湯"],s:'DX拉麵(叉燒鋪滿)|清湯拉麵$99',m:'新埔',bg:''},
-{n:'春㐂拉麵職人',c:'新北市',d:'板橋區',b:["醬油", "豚骨"],p:250,r:4.3,w:'10分',t:["板橋醬油代表"],s:'醬油拉麵|舒肥叉燒拉麵',m:'江子翠',bg:''},
-{n:'伊禾白湯',c:'台北市',d:'信義區',b:["牛骨", "雞湯"],p:310,r:4.9,w:'50分',t:["Google 4.9", "一人職人店"],s:'牛白湯拉麵(每日限量40碗)',m:'國父紀念館',bg:''},
-{n:'千口牛舌烤雞拉麵',c:'台北市',d:'大安區',b:["雞白湯", "雞清湯", "醬油"],p:310,r:4.3,w:'20分',t:["2025新開幕", "牛舌拉麵"],s:'厚切牛舌拉麵(每碗3片)',m:'忠孝復興',bg:'🆕 新店'},
-{n:'雞吉君拉麵(內湖本店)',c:'台北市',d:'內湖區',b:["雞白湯"],p:260,r:4.2,w:'40分',t:["お帰り系統", "金賞"],s:'濃厚雞白湯|特濃雞白湯',m:'西湖',bg:'⭐ 金賞'},
-{n:'池音 鶏白湯ラーメン',c:'台北市',d:'內湖區',b:["雞白湯"],p:280,r:4.5,w:'20分',t:["內湖隱藏", "賣完打烊"],s:'濃郁雞白湯',m:'—',bg:''},
-{n:'熊二拉麵',c:'台北市',d:'內湖區',b:["雞白湯", "豚骨"],p:250,r:4.3,w:'15分',t:["內湖", "賣完打烊"],s:'濃厚豚骨|雞白湯',m:'—',bg:''},
-{n:'黑潮拉麵·炸串',c:'花蓮縣',d:'花蓮市',b:["豚骨"],p:200,r:4.3,w:'15分',t:["客製化"],s:'黑蒜拉麵',m:'',bg:''},
-{n:'匠心食堂拉麵屋',c:'花蓮縣',d:'花蓮市',b:["豚骨", "牛豚骨"],p:240,r:4.3,w:'15分',t:["花蓮第一間"],s:'牛豚骨拉麵',m:'',bg:'🔥 人氣'},
-{n:'雞白郎拉麵',c:'花蓮縣',d:'花蓮市',b:["雞白湯", "魚介雞清湯"],p:265,r:4.4,w:'20分',t:["每日限量50碗", "黑潮姊妹"],s:'泡系雞白湯',m:'',bg:''},
-{n:'麵屋真打',c:'花蓮縣',d:'花蓮市',b:["豚骨"],p:200,r:4.2,w:'15分',t:["免費加麵", "2023新開幕"],s:'特盛蔥豚骨',m:'',bg:'🆕 新店'},
-{n:'麵屋小田',c:'花蓮縣',d:'花蓮市',b:["豚骨", "醬油豚骨"],p:160,r:4.2,w:'5分',t:["百元平價", "在地食材"],s:'博多豚骨|剝皮辣椒拉麵',m:'',bg:''},
-{n:'倉麵屋',c:'花蓮縣',d:'花蓮市',b:["豚骨", "味噌", "醬油"],p:150,r:4.2,w:'10分',t:["百元", "店貓"],s:'濃郁豚骨(限量)',m:'',bg:''},
-{n:'哈拉麵',c:'台東縣',d:'台東市',b:["豚骨"],p:170,r:4.7,w:'20分',t:["台東No.1", "免費加麵"],s:'厚切叉燒豚骨',m:'',bg:'🔥 人氣'},
-{n:'曙SHU拉麵',c:'台東縣',d:'台東市',b:["豚骨"],p:120,r:4.5,w:'10分',t:["台東最美", "100元起"],s:'招牌拉麵|限量乾咖哩',m:'',bg:''},
-{n:'哩麵',c:'台東縣',d:'台東市',b:["大骨蔬菜"],p:145,r:4.3,w:'5分',t:["動漫公仔", "寵物友善"],s:'味噌拉麵|咖哩飯',m:'',bg:''},
-{n:'麺屋木心',c:'嘉義市',d:'西區',b:["醬油", "煮干"],p:185,r:4.7,w:'20分',t:["師承東京", "攤車限量"],s:'醬油煮干拉麵',m:'',bg:''},
-{n:'麵屋三豚',c:'雲林縣',d:'斗六市',b:["豚骨"],p:220,r:4.6,w:'10分',t:["僅8席", "赴日精進"],s:'焦蒜鹽味拉麵|叉燒飯',m:'',bg:''},
-{n:'羽都麵屋',c:'基隆市',d:'仁愛區',b:["雞白湯"],p:215,r:4.5,w:'10分',t:["僅6席", "前森拉麵主廚"],s:'雞白湯味噌|冷沾麵(夏限定)',m:'',bg:''},
-{n:'雲鶴拉麵',c:'屏東縣',d:'恆春鎮',b:["豚骨"],p:225,r:4.5,w:'15分',t:["恆春排隊", "墾丁必吃"],s:'蔥浪拉麵|黑目厚叉燒',m:'',bg:''},
-{n:'雁歸雞湯拉麵',c:'彰化縣',d:'彰化市',b:["雞白湯", "鹽味雞湯"],p:200,r:4.4,w:'15分',t:["文青", "浮世繪牆面"],s:'松露雞白湯|柚香清雞湯',m:'',bg:''},
-{n:'麵魂家',c:'宜蘭縣',d:'羅東鎮',b:["豚骨"],p:200,r:4.4,w:'30分',t:["東海岸最強豚骨", "每日限量"],s:'魂白(濃厚白湯)|魂黑(黑麻油豚骨)',m:'',bg:'🔥 人氣'},
-{n:'屋台拉麵',c:'宜蘭縣',d:'頭城鎮',b:["豚骨", "醬油"],p:225,r:4.5,w:'15分',t:["柴火熬煮", "攤車"],s:'豚骨經典|黑蒜頭私房',m:'',bg:''},
-{n:'麵屋千穗',c:'苗栗縣',d:'苗栗市',b:["豚骨", "味噌", "醬油", "黑蒜"],p:195,r:4.5,w:'15分',t:["苗栗天花板", "免費加麵"],s:'火炙叉燒醬油白湯|櫻桃鴨胸豚骨',m:'',bg:''},
-{n:'麵屋有漁 頭份店',c:'苗栗縣',d:'頭份市',b:["魚白湯", "蝦湯", "干貝醬油"],p:300,r:4.3,w:'20分',t:["全台最強魚介", "石斑魚白湯"],s:'石斑魚白湯|卡布奇諾蝦湯',m:'',bg:'🔥 人氣'},
-{n:'醉心拉麵',c:'新北市',d:'永和區',b:["雞白湯", "鹽味雞清湯"],p:230,r:4.8,w:'15分',t:["原羅東名店", "三種叉燒"],s:'泡系雞白湯|櫻桃鴨清湯',m:'頂溪',bg:''},
-{n:'小高拉麵',c:'新北市',d:'中和區',b:["醬油豚骨", "麻辣豚骨"],p:140,r:4.5,w:'20分',t:["135元含叉燒溏心蛋", "無限加麵"],s:'醬油豚骨|麻辣豚骨',m:'南勢角',bg:''},
-{n:'熊越岳',c:'新北市',d:'新莊區',b:["醬油清湯"],p:280,r:4.6,w:'40分',t:["新莊最強", "每月9號限定$200"],s:'清湯叉燒|百岳限定(每月9號)',m:'幸福',bg:'🔥 人氣'},
-{n:'伊禾白湯',c:'台北市',d:'信義區',b:["牛骨", "雞湯"],p:310,r:4.9,w:'40分',t:["一人職人店", "限量40碗"],s:'牛白湯拉麵(每日限量40碗)',m:'國父紀念館',bg:''},
-{n:'千口牛舌烤雞拉麵',c:'台北市',d:'大安區',b:["雞白湯", "雞清湯", "醬油"],p:310,r:4.3,w:'20分',t:["2025新開幕", "牛舌拉麵"],s:'厚切牛舌拉麵(每碗3片)',m:'忠孝復興',bg:'🆕 新店'},
-{n:'池音 鶏白湯ラーメン',c:'台北市',d:'松山區',b:["雞白湯"],p:270,r:4.5,w:'20分',t:["雞白湯專門"],s:'鶏白湯拉麵',m:'小巨蛋',bg:''},
-{n:'恉霜 拉麵專賣',c:'台北市',d:'中山區',b:["牛白湯", "雞豚清湯"],p:350,r:4.5,w:'30分',t:["2025新開幕", "西餐技法"],s:'犇・老火牛白湯$350|春源・雞豚旨味清湯$330',m:'善導寺',bg:'🆕 新店'},
-{n:'龍鱗拉麵',c:'台北市',d:'大同區',b:["豚骨魚介", "雞白湯", "蝦湯"],p:350,r:4.4,w:'30分',t:["2024新開幕", "高顏值"],s:'柚香桂花拉麵$380|龍蝦雞白湯(限量)',m:'中山/劍潭',bg:'🆕 新店'},
-{n:'麵屋鶴立',c:'台北市',d:'大同區',b:["雞白湯", "雞清湯"],p:320,r:4.4,w:'25分',t:["2024新開幕", "網美裝潢"],s:'鶴立雞白湯(雞豬鴨三拼)',m:'中山',bg:'🆕 新店'},
-{n:'梨橙溫泉拉麵',c:'台北市',d:'大安區',b:["酸菜魚", "螺螄粉", "麻辣"],p:250,r:4.2,w:'15分',t:["水豚主題", "深夜凌晨3點"],s:'重慶酸菜魚拉麵|柳州螺螄粉拉麵',m:'忠孝敦化',bg:''},
-{n:'定置漁場三代目(台北店)',c:'台北市',d:'中山區',b:["魚白湯"],p:330,r:4.3,w:'30分',t:["2025進軍台北", "花蓮名店"],s:'膠原魚白湯|酥炸鬼頭刀',m:'中山',bg:'🆕 新店'},
-{n:'拉麵魚堺',c:'台北市',d:'大安區',b:["雞白湯", "醬油", "鹽味"],p:220,r:4.5,w:'20分',t:["僅4-6席", "中和起家"],s:'醬油拉麵$170起',m:'—',bg:''},
-{n:'墨洋拉麵(資料更新)',c:'台北市',d:'中正區',b:["貝系醬油", "泡系雞豚"],p:220,r:4.5,w:'15分',t:["貝系醬油", "全品項無限加麵"],s:'極上貝貝拉麵$280(生食級干貝)|泡系雞豚',m:'公館',bg:''},
-{n:'丸宗拉麵屋',c:'新北市',d:'三重區',b:["雞白湯", "煮干醬油"],p:200,r:4.6,w:'40分',t:["三重第一", "全雞入湯"],s:'貝出汁煮干醬油|雞白湯(無限加麵)',m:'三重國小',bg:'🔥 人氣'},
-{n:'海貓亭 うみねこ亭',c:'新北市',d:'新店區',b:["雞白湯", "鹽味", "醬油"],p:230,r:4.5,w:'25分',t:["每年入選金賞", "每月29肉肉日"],s:'雞白湯拉麵|海貓拌麵',m:'新店',bg:'⭐ 金賞'},
-{n:'木之本',c:'新北市',d:'蘆洲區',b:["雞白湯"],p:195,r:4.5,w:'20分',t:["蘆洲唯一雞白湯", "一人店"],s:'蛤蠣雞白湯$210|松露雞白湯$180',m:'三民高中',bg:''},
-{n:'炙燃麵所',c:'新北市',d:'土城區',b:["炭火風味"],p:240,r:4.7,w:'25分',t:["2023新開幕", "土城隱藏版"],s:'炭火香氣拉麵',m:'土城/海山',bg:'🆕 新店'},
-{n:'屯京拉麵(林口三井)',c:'新北市',d:'林口區',b:["豚骨醬油", "魚豚"],p:300,r:4.3,w:'25分',t:["東京池袋23年", "免服務費"],s:'東京豚骨拉麵$260起',m:'機捷A9林口',bg:''},
-{n:'激勵軒',c:'台中市',d:'北區',b:["雞白湯"],p:300,r:4.5,w:'30分',t:["2020台中銀賞", "担々麺天花板"],s:'男湯(濃厚乳化)|女湯(泡沫化)',m:'',bg:''},
-{n:'豚骨一笑',c:'台中市',d:'太平區',b:["豚骨"],p:260,r:4.4,w:'20分',t:["發酵熟成工法", "太平代表"],s:'熟成豚骨拉麵|炙燒腩肉叉燒',m:'',bg:''},
-{n:'長生塩人(台中西屯)',c:'台中市',d:'西屯區',b:["鹽味"],p:200,r:4.4,w:'30分',t:["天母名店南下", "2024/3開幕"],s:'鹽味拉麵$160起|辣味肉醬',m:'',bg:'🆕 新店'},
-{n:'北穗製麵所 Kitaho(更新)',c:'台中市',d:'西區',b:["豚骨醬油", "紫蘇清湯"],p:330,r:4.6,w:'25分',t:["日籍老闆", "手工自製麵"],s:'黃金紫蘇清湯|家系豚骨濃厚',m:'',bg:''},
-{n:'麵屋秋鳴',c:'台中市',d:'南區',b:["鴨白湯"],p:300,r:4.3,w:'15分',t:["台中首家鴨白湯", "貍匠旗下"],s:'鴨霸二郎拉麵(整隻鴨腿)',m:'',bg:''},
-{n:'麵屋黑心',c:'台中市',d:'霧峰區',b:["雞白湯", "松露"],p:300,r:4.5,w:'25分',t:["新人賞全台前十", "甜點巴斯克"],s:'松露雞白湯|醬油老火湯',m:'',bg:'⭐ 金賞'},
-{n:'吉胤家',c:'高雄市',d:'三民區',b:["豚骨醬油"],p:240,r:4.6,w:'90分',t:["僅週五六賣拉麵", "每日限量"],s:'橫濱家系濃厚豚骨醬油',m:'',bg:''},
-{n:'麵處小林',c:'高雄市',d:'左營區',b:["雞白湯", "豚骨醬油"],p:230,r:4.3,w:'20分',t:["家系9年", "投幣機"],s:'雞白鹽味拉麵|豚骨醬油',m:'巨蛋',bg:''},
-{n:'珧金拉麵 YOJIN',c:'高雄市',d:'鳳山區',b:["雞白湯", "貝出汁"],p:240,r:4.4,w:'20分',t:["2024新開幕", "鳳山黑馬"],s:'濃熟雞湯拉麵|貝出汁拉麵',m:'衛武營',bg:'🆕 新店'},
-{n:'一風堂 高雄巨蛋店',c:'高雄市',d:'左營區',b:["豚骨"],p:290,r:4.3,w:'15分',t:["連鎖", "博多"],s:'白丸|赤丸',m:'巨蛋',bg:''},
-{n:'中華そば 寶來軒',c:'台南市',d:'北區',b:["豚骨", "味噌", "醬油", "鹽味", "魚介", "雞白湯"],p:220,r:4.3,w:'25分',t:["日本人經營", "6種湯頭"],s:'豚骨拉麵|豚骨魚介',m:'',bg:''},
-{n:'覺丸拉麵',c:'台南市',d:'東區',b:["豚骨"],p:240,r:4.4,w:'25分',t:["2024重新裝潢", "LINE@訂位"],s:'鮮貝豚骨|特製豚骨',m:'',bg:'🆕 新店'},
-{n:'赤坂拉麵 澎湖店',c:'澎湖縣',d:'馬公市',b:["豚骨"],p:250,r:4.0,w:'15分',t:["日本電視冠軍王", "3F海景"],s:'味噌拉麵|叉燒拉麵',m:'',bg:'🔥 人氣'},
-{n:'山禾堂拉麵 澎湖店',c:'澎湖縣',d:'馬公市',b:["豚骨"],p:280,r:4.1,w:'10分',t:["連鎖進駐澎湖", "甜點話題"],s:'霸氣叉燒拉麵(8片)|玉手箱冒煙甜點',m:'',bg:''},
-{n:'麵屋無粹 MuIki',c:'金門縣',d:'金城鎮',b:["雞白湯", "豚骨"],p:150,r:4.2,w:'10分',t:["金門最知名", "有人專程再訪"],s:'雞白湯拉麵(舒肥雞叉燒+溏心蛋)',m:'',bg:''},
-{n:'麵五三屋台',c:'南投縣',d:'草屯鎮',b:["鹽味"],p:240,r:4.3,w:'15分',t:["隱身田中央", "屋台+披薩"],s:'鹽味干貝拉麵(限量)',m:'',bg:''},
-{n:'星嵐拉麵',c:'南投縣',d:'仁愛鄉',b:["豚骨"],p:300,r:4.0,w:'15分',t:["全台海拔最高", "清境農場"],s:'繁盛拉麵(炸蝦+炸牡蠣+鮭魚卵)',m:'',bg:''},
-{n:'龍鱗拉麵',c:'台北市',d:'大同區',b:["豚骨魚介", "雞白湯", "蝦湯"],p:350,r:4.4,w:'25分',t:["2024新開幕", "高顏值"],s:'柚香桂花拉麵$380|龍蝦雞白湯(限量)',m:'中山',bg:'🆕 新店'},
-{n:'麵屋鶴立',c:'台北市',d:'大同區',b:["雞白湯", "雞清湯"],p:320,r:4.4,w:'25分',t:["2024新開幕", "三種肉"],s:'鶴立雞白湯(雞豬鴨三拼)',m:'中山',bg:'🆕 新店'},
-{n:'湮鯱',c:'台北市',d:'中山區',b:["海鮮鹽味"],p:290,r:4.5,w:'25分',t:["2023新人賞金賞", "塩琉二品牌"],s:'海鮮鹽味拉麵',m:'中山',bg:'⭐ 金賞'},
-{n:'隣 tonari',c:'台北市',d:'大安區',b:["多元"],p:280,r:4.4,w:'20分',t:["お帰り體系", "2024新品牌"],s:'お帰り體系新品牌',m:'國父紀念館',bg:'🆕 新店'},
-{n:'丸宗拉麵屋',c:'新北市',d:'三重區',b:["雞白湯", "煮干醬油"],p:200,r:4.6,w:'40分',t:["三重第一", "全雞入湯"],s:'貝出汁煮干醬油|雞白湯(無限加麵)',m:'三重國小',bg:'🔥 人氣'},
-{n:'海貓亭 うみねこ亭',c:'新北市',d:'新店區',b:["雞白湯", "鹽味", "醬油"],p:230,r:4.5,w:'25分',t:["每年入選金賞", "每月29日肉肉日"],s:'雞白湯拉麵|海貓拌麵',m:'新店',bg:'⭐ 金賞'},
-{n:'激勵軒',c:'台中市',d:'北區',b:["雞白湯"],p:300,r:4.5,w:'30分',t:["2020台中銀賞", "男湯女湯"],s:'男湯(濃厚乳化)|女湯(泡沫化)',m:'',bg:''},
-{n:'麵屋秋鳴',c:'台中市',d:'南區',b:["鴨白湯"],p:300,r:4.3,w:'15分',t:["台中首家鴨白湯", "貍匠旗下"],s:'鴨霸二郎拉麵(整隻鴨腿入碗)',m:'',bg:''},
-{n:'麵屋黑心',c:'台中市',d:'霧峰區',b:["雞白湯", "松露"],p:300,r:4.5,w:'25分',t:["新人賞全台前十", "甜點也強"],s:'松露雞白湯|醬油老火湯',m:'',bg:'⭐ 金賞'},
-{n:'麵處小林',c:'高雄市',d:'左營區',b:["雞白湯", "豚骨醬油"],p:230,r:4.3,w:'20分',t:["橫濱家系9年", "投幣機"],s:'雞白鹽味拉麵|豚骨醬油',m:'巨蛋',bg:''},
-{n:'珧金拉麵 YOJIN',c:'高雄市',d:'鳳山區',b:["雞白湯", "貝出汁"],p:240,r:4.4,w:'25分',t:["2024新開幕", "鳳山黑馬"],s:'濃熟雞湯拉麵|貝出汁拉麵',m:'衛武營',bg:'🆕 新店'},
-{n:'中華そば 寶來軒',c:'台南市',d:'北區',b:["豚骨", "味噌", "醬油", "鹽味", "魚介", "雞白湯"],p:220,r:4.3,w:'25分',t:["日本人經營", "6種湯頭"],s:'豚骨拉麵|豚骨魚介',m:'',bg:''},
-{n:'二男家 家系拉麵',c:'台南市',d:'安南區',b:["豚骨醬油"],p:230,r:4.4,w:'20分',t:["家系", "白飯小菜無限"],s:'家系拉麵|白飯小菜無限供應',m:'',bg:''},
-{n:'埔里橫濱拉麵(新址)',c:'南投縣',d:'埔里鎮',b:["豚骨"],p:215,r:4.6,w:'15分',t:["在地食材", "貨櫃屋"],s:'埔里茭白筍拉麵|黑蒜拉麵',m:'',bg:''},
-{n:'麵五三屋台',c:'南投縣',d:'草屯鎮',b:["豚骨", "鹽味"],p:230,r:4.3,w:'15分',t:["田中央屋台", "每日限量"],s:'鹽味干貝拉麵(限量)',m:'',bg:''},
-{n:'麵屋壹の穴 ICHI',c:'台北市',d:'大安區',b:["魚介豚骨", "二郎系", "醬油"],p:250,r:4.2,w:'20分',t:["愛好會連3年名店", "台北CP最高二郎"],s:'壹の二郎拉麵$300|秋刀魚干貝醬油拉麵$250',m:'國父紀念館',bg:'⭐ 金賞'},
-{n:'銀座篝 Kagari',c:'台北市',d:'中山區',b:["雞白湯"],p:330,r:4.3,w:'30分',t:["2024重返台灣", "米其林必比登"],s:'雞白湯Soba|松露雞白湯Soba',m:'中山國小',bg:'🆕 新店'},
-{n:'Okaeri お帰り 你回來啦拉麵',c:'台北市',d:'大安區',b:["豚骨"],p:280,r:4.2,w:'90分',t:["延吉街傳奇", "僅14席"],s:'濃蒜豚骨|黑蒜油豚骨',m:'國父紀念館',bg:'⭐ 金賞'},
-{n:'麵屋輝 TERU',c:'台北市',d:'中山區',b:["魚介豚骨", "沾麵"],p:240,r:4.0,w:'15分',t:["大阪名店", "自家製麵"],s:'魚介豚骨拉麵$220|魚介豚骨沾麵',m:'松江南京',bg:''},
-{n:'神宮寺拉麵',c:'高雄市',d:'左營區',b:["雞白湯"],p:360,r:4.2,w:'40分',t:["名古屋首創", "二層泡"],s:'二層泡雞白湯特製拉麵(赤/白)|沾麵',m:'巨蛋',bg:'🆕 新店'},
-{n:'麵屋栗川',c:'高雄市',d:'新興區',b:["雞白湯", "雞清湯"],p:300,r:4.4,w:'20分',t:["2024新開幕", "食券機"],s:'栗川雞白濃湯|琥珀雞清湯',m:'文化中心',bg:'🆕 新店'},
-{n:'麵屋榊(拉麵壹3號店)',c:'高雄市',d:'鳳山區',b:["雞白湯", "醬油"],p:300,r:4.4,w:'20分',t:["拉麵壹3號店", "牡蠣沾麵"],s:'純雞牡蠣沾麵|醬油雞清湯',m:'—',bg:''},
-{n:'柳町家拉麵',c:'新北市',d:'蘆洲區',b:["雞白湯"],p:260,r:4.9,w:'30分',t:["前麵屋牛一店主", "免費加麵+白飯"],s:'特盛雞白濃湯|塩味雞清湯',m:'蘆洲',bg:''},
-{n:'拉麵魚堺 板橋府中店',c:'新北市',d:'板橋區',b:["醬油", "雞白湯"],p:200,r:4.4,w:'20分',t:["2024/12開幕", "屋台風格"],s:'醬油拉麵|鹽味拉麵',m:'府中',bg:'🆕 新店'},
-{n:'藏味拉麵',c:'新北市',d:'中和區',b:["豚骨", "魚介豚骨", "醬油雞骨"],p:230,r:4.3,w:'35分',t:["小店大人龍", "限量叉燒飯"],s:'濃厚豚骨拉麵|限量叉燒飯',m:'景安',bg:''},
-{n:'隱家拉麵 精明店',c:'台中市',d:'西屯區',b:["豚骨", "雞白湯", "牛骨白湯", "擔擔麵"],p:300,r:4.4,w:'40分',t:["台北名店2024南下", "五種系統"],s:'濃厚牛骨白湯(台中限定)',m:'',bg:'🆕 新店'},
-{n:'麵屋守破離',c:'台中市',d:'北區',b:["豚骨", "雞白湯", "味噌"],p:300,r:4.5,w:'25分',t:["日本人老闆一人作業", "2024新開幕"],s:'豪華濃厚辛味噌|豪華雞鹽豚骨',m:'',bg:'🆕 新店'},
-{n:'腩忍拉麵',c:'台中市',d:'太平區',b:["創作"],p:180,r:4.3,w:'15分',t:["創意熔岩", "$135起"],s:'熔岩拉麵|冰淇淋抹茶泥拉麵',m:'',bg:''},
-{n:'UNMEI 緣 拉麵',c:'台中市',d:'中區',b:["雞骨鹽味", "味噌"],p:275,r:4.3,w:'10分',t:["2024/6新開幕", "日本主廚"],s:'塩味拉麵|辣味噌拉麵',m:'',bg:'🆕 新店'},
-{n:'三冬麵鋪',c:'桃園市',d:'桃園區',b:["雞白湯"],p:255,r:4.6,w:'40分',t:["連續兩年愛好會前十", "桃園第一"],s:'特製雞白湯|世界第二好吃布丁',m:'',bg:'⭐ 金賞'},
-{n:'麵屋虎千代',c:'桃園市',d:'桃園區',b:["醬油"],p:270,r:4.7,w:'40分',t:["桃園最強", "鷹流老闆"],s:'濃湯特製SP拉麵(厚薄叉燒+溏心蛋)',m:'',bg:'🔥 人氣'},
-{n:'極清拉麵',c:'桃園市',d:'中壢區',b:["鹽味", "醬油", "雞白湯"],p:190,r:4.5,w:'20分',t:["中壢排隊王", "$170起"],s:'極清鹽拉麵|晚餐限定雞白湯',m:'',bg:'🔥 人氣'},
-{n:'無常拉麵',c:'桃園市',d:'八德區',b:["雞白湯"],p:215,r:4.7,w:'40分',t:["攤車起家", "檸檬柳橙特色"],s:'鹽味雞白湯(加檸檬柳橙片)',m:'',bg:''},
-{n:'小郜家濃厚雞白湯',c:'桃園市',d:'八德區',b:["雞白湯"],p:220,r:4.6,w:'20分',t:["源自米其林配方", "僅9席"],s:'鹽味雞白湯|醬油雞白湯',m:'',bg:'🌟 米其林'},
-{n:'石田一龍',c:'桃園市',d:'桃園區',b:["豚骨"],p:240,r:4.5,w:'25分',t:["日本6屆拉麵冠軍", "西日本百名店"],s:'濃厚豚骨拉麵(每日限量)',m:'',bg:'🔥 人氣'},
-{n:'拉麵夫人 Ramen FU REN',c:'桃園市',d:'八德區',b:["雞白湯"],p:240,r:4.6,w:'15分',t:["2024新開幕", "淡麗概念"],s:'黑蒜雞白湯|海鮮雞白湯特盛',m:'',bg:'🆕 新店'},
-{n:'Yén itte 言って食処',c:'新竹縣',d:'竹北市',b:["創作"],p:370,r:4.7,w:'需預約',t:["米其林三星學藝", "台日法三元素"],s:'法式油封櫻桃鴨腿醬油鮮螺貝拉麵$460',m:'',bg:'🌟 米其林'},
-{n:'梓村麵屋 鼎中店',c:'高雄市',d:'三民區',b:["雞白湯"],p:275,r:4.4,w:'15分',t:["四種風味", "炙燒肋排"],s:'本格原味雞白濃湯|特盛炙燒肋排',m:'—',bg:''}
-];
+/* S was moved to ../data/shop-data.js */
 // Scroll Reveal
 const obs=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('vis');obs.unobserve(x.target)}})},{threshold:.06,rootMargin:'0px 0px -40px 0px'});
 document.querySelectorAll('.rv').forEach(el=>obs.observe(el));
@@ -702,8 +512,11 @@ window.addEventListener('scroll',()=>{document.getElementById('nb').classList.to
 const bw=document.getElementById('bowlWrap');
 if(bw){for(let i=0;i<14;i++){const p=document.createElement('div');p.className='sakura';const s=3+Math.random()*5;p.style.cssText=`width:${s}px;height:${s}px;left:${10+Math.random()*80}%;top:${-5+Math.random()*12}%;animation-delay:${Math.random()*8}s;animation-duration:${5+Math.random()*5}s;--sx:${(Math.random()-.5)*50}px;--rot:${360+Math.random()*720}deg;opacity:0`;bw.appendChild(p)}}
 
+// Initialize completely random order on load
+S.forEach(s=>s._r=Math.random());
+
 // Finder
-let cc='all',cb='all',sq='',show=15;
+let cc='all',cb='all',cff='all',cs='rand',sq='',show=15;
 const mainCities=['台北市','新北市','桃園市','台中市','台南市','高雄市','新竹'];
 const otherCities=['花蓮縣','宜蘭縣','嘉義市','台東縣','基隆市','屏東縣','彰化縣','苗栗縣','雲林縣','南投縣','新竹縣','澎湖縣','金門縣'];
 
@@ -711,20 +524,35 @@ function filt(){
   return S.filter(s=>{
     const cm=cc==='all'||(cc==='more'?otherCities.some(o=>s.c.includes(o.replace('市','').replace('縣',''))):s.c.includes(cc.replace('市','').replace('縣','')));
     const bm=cb==='all'||s.b.some(b=>b.includes(cb));
-    const sm=!sq||s.n.includes(sq)||s.c.includes(sq)||(s.d&&s.d.includes(sq))||s.b.some(b=>b.includes(sq))||s.s.includes(sq)||s.t.some(t=>t.includes(sq));
-    return cm&&bm&&sm;
-  }).sort((a,b)=>b.r-a.r);
+    let fm=true;
+    if(cff!=='all'){
+      if(cff==='米其林') fm=(s.bg&&s.bg.includes('米其林'))||s.t.some(x=>x.includes('米其林'));
+      else if(cff==='免排隊') fm=s.w.includes('5分')||s.w.includes('10分')||s.w.includes('15分')||s.w.includes('免排队')||s.w.includes('免排隊')||s.w.includes('無需排隊');
+      else if(cff==='深夜營業') fm=s.t.some(x=>x.includes('深夜'));
+      else fm=s.b.some(x=>x.includes(cff))||s.t.some(x=>x.includes(cff))||(s.s&&s.s.includes(cff));
+    }
+    const sm=!sq||s.n.includes(sq)||s.c.includes(sq)||(s.d&&s.d.includes(sq))||s.b.some(b=>b.includes(sq))||(s.s&&s.s.includes(sq))||s.t.some(t=>t.includes(sq));
+    return cm&&bm&&fm&&sm;
+  }).sort((a,b)=>{
+    if(cs==='r') return b.r-a.r;
+    if(cs==='p') return a.p-b.p;
+    return b._r-a._r;
+  });
 }
 
-function render(){
-  const f=filt(),shown=f.slice(0,show);
-  document.getElementById('cnt').textContent=`找到 ${f.length} 家${sq?' (搜尋: '+sq+')':''}，顯示 ${Math.min(show,f.length)} 家`;
-  document.getElementById('grid').innerHTML=shown.map((s,i)=>`
-    <div class="sc" style="animation:cardUp .45s ${i*.03}s both">
+function render(append=false){
+  const f=filt(),shown=f.slice(append?show-15:0,show);
+  if(!append){
+    let st=cs==='r'?'(依評分排序)':(cs==='p'?'(依價格排序)':'(探索推薦)');
+    document.getElementById('cnt').textContent=`找到 ${f.length} 家${sq?' (搜尋: '+sq+')':''} ${st}`;
+  }
+  const html=shown.map((s,i)=>`
+    <div class="sc ${V.includes(s.n)?'vsd':''}" style="animation:cardIn .6s cubic-bezier(.16,1,.3,1) both; ${append?`animation-delay:${(i%15)*0.03}s`:''}">
       ${s.bg?`<div class="sc-badge">${s.bg}</div>`:''}
       <div class="sc-h">
         <div class="sc-n">${s.n}</div>
         <div class="sc-r">${s.r}</div>
+        <button class="chk-btn ${V.includes(s.n)?'vsd':''}" onclick="toggleV('${s.n}')">${V.includes(s.n)?'🏅 已攻略':'打卡'}</button>
       </div>
       <div class="sc-loc">📍 ${s.c}${s.d?' '+s.d:''}${s.m&&s.m!=='—'&&s.m!==''?' ｜ 🚇 '+s.m:''}</div>
       <div class="sc-tags">${s.b.map(b=>`<span class="tag">${b}</span>`).join('')}${s.t.slice(0,2).map(t=>`<span class="tag tag-g">${t}</span>`).join('')}</div>
@@ -734,21 +562,135 @@ function render(){
       </div>
       ${s.s?`<div class="sc-det" style="margin-top:6px;grid-template-columns:1fr"><div><span class="sc-dl">招牌</span> ${s.s.replace(/\|/g,' · ')}</div></div>`:''}
     </div>`).join('');
-  const btn=document.getElementById('lm');
-  if(btn)btn.style.display=show<f.length?'block':'none';
+  if(append) document.getElementById('grid').insertAdjacentHTML('beforeend',html);
+  else document.getElementById('grid').innerHTML=html;
 }
 
-document.getElementById('cf').addEventListener('click',e=>{if(!e.target.matches('.fb'))return;document.querySelectorAll('#cf .fb').forEach(b=>b.classList.remove('act'));e.target.classList.add('act');cc=e.target.dataset.c;show=15;render()});
-document.getElementById('bf').addEventListener('click',e=>{if(!e.target.matches('.fb'))return;document.querySelectorAll('#bf .fb').forEach(b=>b.classList.remove('act'));e.target.classList.add('act');cb=e.target.dataset.b;show=15;render()});
+['c','b','f','s'].forEach(fid=>{
+  const p=document.getElementById(fid+'f');
+  if(!p)return;
+  p.addEventListener('click',e=>{
+    if(!e.target.matches('.fb'))return;
+    p.querySelectorAll('.fb').forEach(b=>b.classList.remove('act'));
+    e.target.classList.add('act');
+    if(fid==='c')cc=e.target.dataset.c;
+    if(fid==='b')cb=e.target.dataset.b;
+    if(fid==='f')cff=e.target.dataset.f;
+    if(fid==='s')cs=e.target.dataset.s;
+    show=15; render();
+  });
+});
+
 let debounce;
 document.getElementById('si').addEventListener('input',e=>{clearTimeout(debounce);debounce=setTimeout(()=>{sq=e.target.value.trim();show=15;render()},200)});
-const lmBtn=document.getElementById('lm');
-if(lmBtn)lmBtn.addEventListener('click',()=>{show+=15;render()});
 
-const st=document.createElement('style');
-st.textContent='@keyframes cardUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:none}}';
-document.head.appendChild(st);
+// Infinite Scroll
+const sent=document.getElementById('sentinel');
+if(sent){
+  const io=new IntersectionObserver(e=>{
+    if(e[0].isIntersecting){
+      const l=filt().length;
+      if(show<l){ show+=15; render(true); }
+    }
+  },{rootMargin:'300px'});
+  io.observe(sent);
+}
+
+// Advanced Gamification (Trophies)
+let V = JSON.parse(localStorage.getItem('mh_v')||'[]');
+
+function renderAchievements(){
+  const eat_total = V.length;
+  const visited_shops = V.map(n => S.find(s=>s.n===n)).filter(Boolean);
+  
+  const tp_count = visited_shops.filter(s=>s.c.includes('台北')).length;
+  const tk_count = visited_shops.filter(s=>s.b.includes('豚骨')).length;
+  const tc_count = visited_shops.filter(s=>s.b.includes('雞白湯')||s.b.includes('鳥白湯')).length;
+  const star_count = visited_shops.filter(s=>(s.bg&&s.bg.includes('米其林'))||s.t.some(x=>x.includes('米其林'))).length;
+  
+  const TROPHIES = [
+    {n:'🔰 初心入魂', d:'踏出成為職人的第一步 (打卡 1 碗)', cur: eat_total, max: 1},
+    {n:'🏃 台北探路者', d:'攻略台北市拉麵名店 (打卡 3 家)', cur: tp_count, max: 3},
+    {n:'🦴 豚骨狂熱', d:'品嚐濃郁乳化豚骨湯 (打卡 3 家豚骨)', cur: tk_count, max: 3},
+    {n:'🐔 雞白湯信徒', d:'體驗金黃雞香膠原蛋白 (打卡 3 家雞白湯)', cur: tc_count, max: 3},
+    {n:'🌟 摘星美食家', d:'品嚐米其林推薦拉麵 (打卡 1 家米其林)', cur: star_count, max: 1},
+    {n:'👑 麵魂皇帝', d:'全台頂級探索者 (打卡 30 碗)', cur: eat_total, max: 30}
+  ];
+  
+  const trTotal = document.getElementById('tr-total');
+  if(trTotal) trTotal.textContent = eat_total;
+  
+  const trList = document.getElementById('tr-list');
+  if(trList){
+    trList.innerHTML = TROPHIES.map(t=>{
+      const unl = t.cur >= t.max;
+      const pct = Math.min(100, Math.floor((t.cur/t.max)*100));
+      return `
+      <div class="tr-c ${unl?'unl':''} rv">
+        <div class="tr-i">${unl?t.n.split(' ')[0]:'🔒'}</div>
+        <div class="tr-d">
+          <div class="tr-n">${t.n.split(' ')[1]}</div>
+          <div class="tr-desc">${t.d}</div>
+          <div class="tr-prog"><div class="tr-prog-b" style="width:${pct}%"></div></div>
+          <div class="tr-prog-t">${t.cur} / ${t.max}</div>
+        </div>
+      </div>
+      `;
+    }).join('');
+    // re-observe new items for scroll reveal
+    const obs=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('vis');obs.unobserve(x.target)}})},{threshold:.06,rootMargin:'0px 0px -40px 0px'});
+    document.querySelectorAll('#tr-list .rv').forEach(el=>obs.observe(el));
+  }
+}
+
+window.toggleV = function(n){
+  if(V.includes(n)) V=V.filter(x=>x!==n);
+  else V.push(n);
+  localStorage.setItem('mh_v',JSON.stringify(V));
+  const cy = window.scrollY; render(); renderAchievements(); window.scrollTo(0,cy);
+};
+
+window.rollGacha = function(){
+  const unv=S.filter(s=>!V.includes(s.n));
+  if(unv.length===0){ alert('太神啦！全台制霸！沒有未打卡的店了！'); return; }
+  const s = unv[Math.floor(Math.random()*unv.length)];
+  let r='R', rt='';
+  if(s.r>=4.6 || (s.bg&&s.bg.includes('米其林'))){ r='UR'; rt='傳說の神級'; }
+  else if(s.r>=4.4){ r='SSR'; rt='必吃名店'; }
+  else if(s.r>=4.1){ r='SR'; rt='人氣好店'; }
+  else { r='R'; rt='街邊好味道'; }
+  
+  document.getElementById('g-res').innerHTML=`
+    <div class="g-rarity r-${r}">${r} ${rt}</div>
+    <div class="g-sh">
+      ${s.bg?`<span class="tag" style="float:right">${s.bg}</span>`:''}
+      <h3 style="font-family:var(--f1);font-size:22px;color:var(--ink);margin-bottom:8px">${s.n}</h3>
+      <div style="font-size:14px;color:var(--ink2);margin-bottom:12px;display:flex;align-items:center;gap:6px">📍 ${s.c} ${s.d||''} ${s.m?'🚇 '+s.m:''}</div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:16px">
+        <div style="background:rgba(255,255,255,0.6);padding:8px 12px;border-radius:8px">⭐ 評分: ${s.r}</div>
+        <div style="background:rgba(255,255,255,0.6);padding:8px 12px;border-radius:8px">⏱️ 等候: ${s.w||'未知'}</div>
+      </div>
+      ${s.s?`<div style="font-size:13px;font-weight:600;color:var(--acc);background:rgba(227,80,44,0.1);padding:10px 14px;border-radius:8px;">🍜 推薦: ${s.s}</div>`:''}
+    </div>
+  `;
+  document.getElementById('g-acc').onclick=()=>{
+    document.getElementById('m-gacha').classList.remove('on');
+    document.getElementById('si').value=s.n;
+    sq=s.n; cc='all'; cb='all'; cff='all'; 
+    document.querySelectorAll('.fb').forEach(b=>b.classList.remove('act'));
+    document.querySelector('#cf [data-c="all"]').classList.add('act');
+    document.querySelector('#bf [data-b="all"]').classList.add('act');
+    document.querySelector('#ff [data-f="all"]').classList.add('act');
+    show=15; render();
+    document.getElementById('cf').scrollIntoView({behavior:'smooth'});
+  };
+}
+document.getElementById('btnGacha').addEventListener('click',()=>{
+  rollGacha();
+  document.getElementById('m-gacha').classList.add('on');
+});
 
 render();
+renderAchievements();
 </script>
 </body></html>
