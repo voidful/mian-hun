@@ -109,7 +109,7 @@
       "city": "台北市",
       "district": "中山區",
       "address": "林森北路306號",
-      "mrt": "",
+      "mrt": "中山",
       "broth_types": [
         "創作",
         "限定"
@@ -142,7 +142,7 @@
       "city": "台北市",
       "district": "中正區",
       "address": "重慶南路一段116號",
-      "mrt": "",
+      "mrt": "台大醫院",
       "broth_types": [
         "鹽味"
       ],
@@ -367,7 +367,7 @@
       "city": "台北市",
       "district": "大安區",
       "address": "仁愛路四段228-6號",
-      "mrt": "",
+      "mrt": "忠孝敦化",
       "broth_types": [
         "雞清湯",
         "蛤蜊"
@@ -400,7 +400,7 @@
       "city": "台中市",
       "district": "西區",
       "address": "中美街331巷15號",
-      "mrt": "",
+      "mrt": "—",
       "broth_types": [
         "雞白湯",
         "濃厚"
@@ -433,7 +433,7 @@
       "city": "台中市",
       "district": "西區",
       "address": "向上路一段170號",
-      "mrt": "",
+      "mrt": "—",
       "broth_types": [
         "魚介",
         "鮭魚"
@@ -466,7 +466,7 @@
       "city": "台中市",
       "district": "西區",
       "address": "中美街419之4號",
-      "mrt": "",
+      "mrt": "—",
       "broth_types": [
         "蝦",
         "魚介"
@@ -499,7 +499,7 @@
       "city": "台中市",
       "district": "中區",
       "address": "中山路82號",
-      "mrt": "",
+      "mrt": "—",
       "broth_types": [
         "豚骨",
         "雞白湯"
@@ -532,7 +532,7 @@
       "city": "台中市",
       "district": "西屯區",
       "address": "文心路三段107-16號",
-      "mrt": "",
+      "mrt": "文心中清",
       "broth_types": [
         "牛骨",
         "咖哩"
@@ -565,7 +565,7 @@
       "city": "高雄市",
       "district": "三民區",
       "address": "正興路111號",
-      "mrt": "",
+      "mrt": "後驛",
       "broth_types": [
         "豚骨"
       ],
@@ -658,7 +658,7 @@
       "city": "高雄市",
       "district": "前鎮區",
       "address": "林森三路197號",
-      "mrt": "",
+      "mrt": "獅甲",
       "broth_types": [
         "豚骨",
         "味噌",
@@ -807,7 +807,7 @@
       "city": "台中市",
       "district": "西區",
       "address": "公益路124巷2號",
-      "mrt": "",
+      "mrt": "—",
       "broth_types": [
         "豚骨",
         "雞白"
@@ -834,7 +834,7 @@
       "city": "台中市",
       "district": "西區",
       "address": "臺灣大道二段48號",
-      "mrt": "",
+      "mrt": "—",
       "broth_types": [
         "魚介",
         "豚骨"
@@ -861,7 +861,7 @@
       "city": "台中市",
       "district": "西屯區",
       "address": "河南路二段432之1號",
-      "mrt": "",
+      "mrt": "—",
       "broth_types": [
         "豚骨",
         "味噌"
@@ -1149,7 +1149,7 @@
       "name": "麵屋雞金",
       "city": "台北市",
       "district": "中正區",
-      "address": "忠孝新生站附近",
+      "address": "新生南路一段6號1樓",
       "mrt": "忠孝新生",
       "broth_types": [
         "雞白湯",
@@ -1182,7 +1182,7 @@
       "name": "長生塩人",
       "city": "台北市",
       "district": "士林區",
-      "address": "天母",
+      "address": "天母西路65號",
       "mrt": "芝山",
       "broth_types": [
         "鹽味",
@@ -1215,7 +1215,7 @@
       "name": "麵屋和創",
       "city": "台北市",
       "district": "松山區",
-      "address": "延吉街",
+      "address": "延吉街2號",
       "mrt": "小巨蛋",
       "broth_types": [
         "醬油",
@@ -1249,9 +1249,9 @@
       "id": "takumo-ramen",
       "name": "森麵堂",
       "city": "台北市",
-      "district": "內湖區",
-      "address": "環山路一段33號",
-      "mrt": "—",
+      "district": "大安區",
+      "address": "東豐街52號1樓",
+      "mrt": "大安",
       "broth_types": [
         "雞白湯"
       ],
@@ -1266,11 +1266,11 @@
       "wait_time": "30分",
       "tags": [
         "米其林",
-        "內湖"
+        "大安"
       ],
       "features": [
         "米其林",
-        "內湖"
+        "大安"
       ],
       "notes": "米其林一星職人打造，日本嚴選麵體。僅此一家，必排隊",
       "source": "marieClaire台北雞白湯10間; Klook",
@@ -1377,8 +1377,8 @@
       "id": "tenjiku-ramen",
       "name": "天鷄麵屋坊",
       "city": "台北市",
-      "district": "中山區",
-      "address": "中山站附近",
+      "district": "大同區",
+      "address": "南京西路18巷4弄8之1號1樓",
       "mrt": "中山",
       "broth_types": [
         "雞白湯"
@@ -1475,7 +1475,7 @@
       "name": "好呷拉麵 板橋三民店",
       "city": "新北市",
       "district": "板橋區",
-      "address": "三民路",
+      "address": "三民路二段203-3號",
       "mrt": "新埔",
       "broth_types": [
         "豚骨"
@@ -1506,7 +1506,7 @@
       "name": "懸日拉",
       "city": "新北市",
       "district": "板橋區",
-      "address": "板橋",
+      "address": "文化路一段31號",
       "mrt": "板橋",
       "broth_types": [
         "水果系"
@@ -1632,7 +1632,7 @@
       "name": "雞吉君拉麵 西門店",
       "city": "台北市",
       "district": "萬華區",
-      "address": "西門",
+      "address": "昆明街172號",
       "mrt": "西門",
       "broth_types": [
         "雞白湯",
@@ -1665,7 +1665,7 @@
       "name": "吞山郎 二郎風拉麵",
       "city": "台中市",
       "district": "西屯區",
-      "address": "牛庵隔壁",
+      "address": "文心路三段107-16號旁",
       "mrt": "—",
       "broth_types": [
         "豚骨",
@@ -1698,7 +1698,7 @@
       "name": "山形心心拉麵 士林店",
       "city": "台北市",
       "district": "士林區",
-      "address": "士林夜市小東街",
+      "address": "小東街25號",
       "mrt": "劍潭",
       "broth_types": [
         "醬油",
@@ -1732,9 +1732,9 @@
       "id": "tokunooya",
       "name": "特濃屋",
       "city": "台北市",
-      "district": "大安區",
-      "address": "大安區",
-      "mrt": "信義安和",
+      "district": "中山區",
+      "address": "中山北路二段77巷22號",
+      "mrt": "雙連",
       "broth_types": [
         "豚骨醬油"
       ],
@@ -1764,7 +1764,7 @@
       "name": "麵屋堂本",
       "city": "桃園市",
       "district": "中壢區",
-      "address": "中壢",
+      "address": "中央東路67號",
       "mrt": "—",
       "broth_types": [
         "多元"
@@ -1795,7 +1795,7 @@
       "name": "淳鳩一夫日式拉麵",
       "city": "台南市",
       "district": "中西區",
-      "address": "赤崁樓附近",
+      "address": "民權路二段218號",
       "mrt": "",
       "broth_types": [
         "雞白湯",
@@ -1828,7 +1828,7 @@
       "name": "俺の豚",
       "city": "台南市",
       "district": "永康區",
-      "address": "永康",
+      "address": "東橋一路250號",
       "mrt": "",
       "broth_types": [
         "豚骨"
@@ -1954,7 +1954,7 @@
       "name": "麵家宇味",
       "city": "台南市",
       "district": "中西區",
-      "address": "西門路",
+      "address": "西門路二段429號",
       "mrt": "",
       "broth_types": [
         "豚骨",
@@ -1985,7 +1985,7 @@
       "name": "Nani麵",
       "city": "台南市",
       "district": "中西區",
-      "address": "新美街",
+      "address": "新美街163號",
       "mrt": "",
       "broth_types": [
         "醬油",
@@ -2018,7 +2018,7 @@
       "name": "双赫日式拉麵",
       "city": "台南市",
       "district": "中西區",
-      "address": "中西區",
+      "address": "海安路二段269巷25號",
       "mrt": "",
       "broth_types": [
         "鹽味",
@@ -2177,7 +2177,7 @@
       "name": "麵屋吉光",
       "city": "新竹市",
       "district": "東區",
-      "address": "關新路附近",
+      "address": "關新路65號",
       "mrt": "",
       "broth_types": [
         "豚骨"
@@ -2374,7 +2374,7 @@
       "city": "新北市",
       "district": "林口區",
       "address": "復興北路(林口長庚附近)",
-      "mrt": "",
+      "mrt": "—",
       "broth_types": [
         "豚骨",
         "多元"
@@ -2440,7 +2440,7 @@
       "city": "台中市",
       "district": "西區",
       "address": "健行路1049號(金典綠園道3F)",
-      "mrt": "",
+      "mrt": "—",
       "broth_types": [
         "鹽味",
         "醬油",
@@ -2606,7 +2606,7 @@
       "name": "田介拉麵",
       "city": "高雄市",
       "district": "鹽埕區",
-      "address": "鹽埕",
+      "address": "鹽埕街56號",
       "mrt": "鹽埕埔",
       "broth_types": [
         "豚骨",
@@ -2639,7 +2639,7 @@
       "name": "田介二郎",
       "city": "高雄市",
       "district": "新興區",
-      "address": "新堀江巷弄",
+      "address": "五福二路118巷1號",
       "mrt": "中央公園",
       "broth_types": [
         "豚骨醬油",
@@ -2672,7 +2672,7 @@
       "name": "Men On Soup 雞白湯拉麵",
       "city": "高雄市",
       "district": "左營區",
-      "address": "左營(凹子底附近)",
+      "address": "重信路128號",
       "mrt": "凹子底",
       "broth_types": [
         "雞白湯"
@@ -2703,7 +2703,7 @@
       "name": "瀧澤軒食堂",
       "city": "高雄市",
       "district": "苓雅區",
-      "address": "文化中心旁",
+      "address": "林泉街44號",
       "mrt": "文化中心",
       "broth_types": [
         "豚骨",
@@ -2773,7 +2773,7 @@
       "name": "研田拉麵",
       "city": "高雄市",
       "district": "鼓山區",
-      "address": "美術館附近",
+      "address": "美術東八街118號",
       "mrt": "—",
       "broth_types": [
         "雞白湯",
@@ -2839,7 +2839,7 @@
       "name": "火山湯海",
       "city": "高雄市",
       "district": "左營區",
-      "address": "巨蛋附近",
+      "address": "左營區新莊一路276號",
       "mrt": "巨蛋",
       "broth_types": [
         "辣麻味噌"
@@ -2868,7 +2868,7 @@
       "name": "大海拉麵 高雄店",
       "city": "高雄市",
       "district": "前鎮區",
-      "address": "三多商圈附近",
+      "address": "三多三路214號",
       "mrt": "三多商圈",
       "broth_types": [
         "豚骨"
@@ -3025,7 +3025,7 @@
       "name": "清流房日式拉麵",
       "city": "高雄市",
       "district": "鼓山區",
-      "address": "美術館附近",
+      "address": "美術南二路125號",
       "mrt": "—",
       "broth_types": [
         "豚骨",
@@ -3058,7 +3058,7 @@
       "name": "拉麵天滿",
       "city": "高雄市",
       "district": "苓雅區",
-      "address": "英明商圈附近",
+      "address": "英明一路82號",
       "mrt": "—",
       "broth_types": [
         "雞白湯"
@@ -3089,7 +3089,7 @@
       "name": "幸花雞白湯 高雄店",
       "city": "高雄市",
       "district": "新興區",
-      "address": "仁愛路",
+      "address": "仁愛二街112號",
       "mrt": "信義國小",
       "broth_types": [
         "雞白湯"
@@ -3306,7 +3306,7 @@
       "name": "麵屋小田",
       "city": "花蓮縣",
       "district": "花蓮市",
-      "address": "中華路",
+      "address": "中華路344號",
       "mrt": "",
       "broth_types": [
         "豚骨",
@@ -3661,7 +3661,7 @@
       "name": "瀧野拉麵(家系)",
       "city": "嘉義市",
       "district": "東區",
-      "address": "文化路夜市附近",
+      "address": "文化路450號",
       "mrt": "",
       "broth_types": [
         "豚骨醬油"
@@ -4675,7 +4675,7 @@
       "city": "新北市",
       "district": "汐止區",
       "address": "新台五路一段150號",
-      "mrt": "",
+      "mrt": "—",
       "broth_types": [
         "雞清湯"
       ],
@@ -4898,7 +4898,7 @@
       "city": "台北市",
       "district": "大同區",
       "address": "赤峰街23巷25號",
-      "mrt": "—",
+      "mrt": "中山",
       "broth_types": [
         "雞白湯"
       ],
@@ -4912,11 +4912,11 @@
       "rating": 4.5,
       "wait_time": "20分",
       "tags": [
-        "內湖隱藏",
+        "赤峰街隱藏",
         "賣完打烊"
       ],
       "features": [
-        "內湖隱藏",
+        "赤峰街隱藏",
         "賣完打烊"
       ],
       "notes": "雞白湯專門店。trip.com特派員私心推薦回訪率100%",
@@ -4927,9 +4927,9 @@
       "id": "kuma2-ramen",
       "name": "熊二拉麵",
       "city": "台北市",
-      "district": "內湖區",
-      "address": "內湖",
-      "mrt": "—",
+      "district": "信義區",
+      "address": "虎林街164巷11號",
+      "mrt": "永春",
       "broth_types": [
         "雞白湯",
         "豚骨"
@@ -4945,11 +4945,11 @@
       "rating": 4.3,
       "wait_time": "15分",
       "tags": [
-        "內湖",
+        "信義隱藏",
         "賣完打烊"
       ],
       "features": [
-        "內湖",
+        "信義隱藏",
         "賣完打烊"
       ],
       "notes": "內湖隱藏巷弄，豚骨/雞白湯雙選，湯賣完即打烊",
@@ -5191,7 +5191,7 @@
       "city": "台北市",
       "district": "大安區",
       "address": "瑞安街260-3號(大安店)",
-      "mrt": "—",
+      "mrt": "科技大樓",
       "broth_types": [
         "雞白湯",
         "醬油",
@@ -5210,11 +5210,11 @@
       "wait_time": "20分",
       "tags": [
         "僅4-6席",
-        "中和起家"
+        "CP值極高"
       ],
       "features": [
         "僅4-6席",
-        "中和起家"
+        "CP值極高"
       ],
       "notes": "確認營業中，目前3家分店確認營運：中和店（民享街94號）、大安店（瑞安街260-3號）、中山新店（大同區赤峰街49巷18號2樓，2025/6開幕）。板橋府中店（2024/12開幕）IG未列出，可能已歇業。基本款拉麵僅170元，CP值極高。",
       "source": "驗證報告2026-04; ramenroamer; mymarcy.tw",
@@ -5326,7 +5326,7 @@
       "name": "木之本",
       "city": "新北市",
       "district": "蘆洲區",
-      "address": "光華路",
+      "address": "和平路206號",
       "mrt": "三民高中",
       "broth_types": [
         "雞白湯"
@@ -5357,7 +5357,7 @@
       "name": "炙燃麵所",
       "city": "新北市",
       "district": "土城區",
-      "address": "土城區",
+      "address": "青雲路336巷18號",
       "mrt": "土城/海山",
       "broth_types": [
         "炭火風味"
@@ -5422,7 +5422,7 @@
       "city": "台中市",
       "district": "北區",
       "address": "三民路三段75號",
-      "mrt": "",
+      "mrt": "—",
       "broth_types": [
         "雞白湯"
       ],
@@ -5453,7 +5453,7 @@
       "city": "台中市",
       "district": "太平區",
       "address": "樹德路12-2號",
-      "mrt": "",
+      "mrt": "—",
       "broth_types": [
         "豚骨"
       ],
@@ -5484,7 +5484,7 @@
       "city": "台中市",
       "district": "西屯區",
       "address": "台灣大道三段486號",
-      "mrt": "",
+      "mrt": "—",
       "broth_types": [
         "鹽味"
       ],
@@ -5515,7 +5515,7 @@
       "city": "台中市",
       "district": "西區",
       "address": "公益路124巷2號",
-      "mrt": "",
+      "mrt": "—",
       "broth_types": [
         "豚骨醬油",
         "紫蘇清湯"
@@ -5548,7 +5548,7 @@
       "city": "台中市",
       "district": "南區",
       "address": "文心南路715號",
-      "mrt": "",
+      "mrt": "—",
       "broth_types": [
         "鴨白湯"
       ],
@@ -5579,7 +5579,7 @@
       "city": "台中市",
       "district": "霧峰區",
       "address": "育群路264號",
-      "mrt": "",
+      "mrt": "—",
       "broth_types": [
         "雞白湯",
         "松露"
@@ -5612,7 +5612,7 @@
       "city": "高雄市",
       "district": "三民區",
       "address": "慶雲街105號",
-      "mrt": "",
+      "mrt": "—",
       "broth_types": [
         "豚骨醬油"
       ],
@@ -5906,7 +5906,7 @@
       "name": "麵五三屋台",
       "city": "南投縣",
       "district": "草屯鎮",
-      "address": "田中央",
+      "address": "草屯鎮田中央",
       "mrt": "",
       "broth_types": [
         "豚骨",
@@ -5938,7 +5938,7 @@
       "name": "星嵐拉麵",
       "city": "南投縣",
       "district": "仁愛鄉",
-      "address": "清境",
+      "address": "仁愛鄉定遠新村25號",
       "mrt": "",
       "broth_types": [
         "豚骨"
@@ -5968,9 +5968,9 @@
       "id": "yanchi-ramen",
       "name": "湮鯱",
       "city": "台北市",
-      "district": "中山區",
-      "address": "中山區",
-      "mrt": "中山",
+      "district": "大安區",
+      "address": "市民大道三段302號",
+      "mrt": "忠孝復興",
       "broth_types": [
         "海鮮鹽味"
       ],
@@ -6030,8 +6030,8 @@
       "id": "ninan-tainan",
       "name": "二男家 家系拉麵",
       "city": "台南市",
-      "district": "安南區",
-      "address": "公路旁",
+      "district": "北區",
+      "address": "公園路928號",
       "mrt": "",
       "broth_types": [
         "豚骨醬油"
@@ -6254,7 +6254,7 @@
       "name": "麵屋栗川",
       "city": "高雄市",
       "district": "新興區",
-      "address": "五福二路附近",
+      "address": "五福二路86號",
       "mrt": "文化中心",
       "broth_types": [
         "雞白湯",
@@ -6287,7 +6287,7 @@
       "name": "麵屋榊(拉麵壹3號店)",
       "city": "高雄市",
       "district": "鳳山區",
-      "address": "文山特區",
+      "address": "鳳松路172號",
       "mrt": "—",
       "broth_types": [
         "雞白湯",
@@ -6387,7 +6387,7 @@
       "city": "台中市",
       "district": "西屯區",
       "address": "精明路21號",
-      "mrt": "",
+      "mrt": "—",
       "broth_types": [
         "豚骨",
         "雞白湯",
@@ -6424,7 +6424,7 @@
       "city": "台中市",
       "district": "北區",
       "address": "錦新街90巷2號",
-      "mrt": "",
+      "mrt": "—",
       "broth_types": [
         "豚骨",
         "雞白湯",
@@ -6458,8 +6458,8 @@
       "name": "腩忍拉麵",
       "city": "台中市",
       "district": "太平區",
-      "address": "太平/大里",
-      "mrt": "",
+      "address": "立文街(近育才路)",
+      "mrt": "—",
       "broth_types": [
         "創作"
       ],
@@ -6490,7 +6490,7 @@
       "city": "台中市",
       "district": "中區",
       "address": "民權路44巷1號",
-      "mrt": "",
+      "mrt": "—",
       "broth_types": [
         "雞骨鹽味",
         "味噌"
@@ -6523,7 +6523,7 @@
       "city": "桃園市",
       "district": "桃園區",
       "address": "同德十街17號",
-      "mrt": "",
+      "mrt": "—",
       "broth_types": [
         "雞白湯"
       ],
@@ -6554,7 +6554,7 @@
       "city": "桃園市",
       "district": "桃園區",
       "address": "中正路48巷3號",
-      "mrt": "",
+      "mrt": "—",
       "broth_types": [
         "醬油"
       ],
@@ -6585,7 +6585,7 @@
       "city": "桃園市",
       "district": "中壢區",
       "address": "九和一街3號1F",
-      "mrt": "",
+      "mrt": "—",
       "broth_types": [
         "鹽味",
         "醬油",
@@ -6620,7 +6620,7 @@
       "city": "桃園市",
       "district": "八德區",
       "address": "建國路1142號",
-      "mrt": "",
+      "mrt": "—",
       "broth_types": [
         "雞白湯"
       ],
@@ -6651,7 +6651,7 @@
       "city": "桃園市",
       "district": "八德區",
       "address": "介壽路二段208號",
-      "mrt": "",
+      "mrt": "—",
       "broth_types": [
         "雞白湯"
       ],
@@ -6682,7 +6682,7 @@
       "city": "桃園市",
       "district": "桃園區",
       "address": "寶慶路92號",
-      "mrt": "",
+      "mrt": "—",
       "broth_types": [
         "豚骨"
       ],
@@ -6713,7 +6713,7 @@
       "city": "桃園市",
       "district": "八德區",
       "address": "陸光街19號",
-      "mrt": "",
+      "mrt": "—",
       "broth_types": [
         "雞白湯"
       ],
@@ -6774,7 +6774,7 @@
       "name": "梓村麵屋 鼎中店",
       "city": "高雄市",
       "district": "三民區",
-      "address": "鼎中路附近",
+      "address": "鼎中路646號",
       "mrt": "—",
       "broth_types": [
         "雞白湯"
