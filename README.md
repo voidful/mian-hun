@@ -162,7 +162,7 @@ Deploy `website/` to GitHub Pages for an interactive ramen finder:
 # In repo settings → Pages → Source: /website
 ```
 
-Live: `https://voidufl.github.io/mian-hun/`
+Live: `https://voidful.github.io/mian-hun/website`
 
 ---
 
