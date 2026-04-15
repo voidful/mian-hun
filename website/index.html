@@ -696,7 +696,7 @@ const obs=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting){x.targ
 document.querySelectorAll('.rv').forEach(el=>obs.observe(el));
 
 // Nav
-window.addEventListener('scroll',()=>{document.getElementById('nav').classList.toggle('scrolled',scrollY>50)});
+window.addEventListener('scroll',()=>{document.getElementById('nb').classList.toggle('scrolled',scrollY>50)});
 
 // Sakura
 const bw=document.getElementById('bowlWrap');
