@@ -3,7 +3,7 @@
     "name": "麵魂台灣拉麵完整資料庫",
     "version": "6.0-gamified",
     "updated": "2026-04-16",
-    "count": 235
+    "count": 211
   },
   "shops": [
     {
@@ -44,7 +44,7 @@
       "name": "隱家拉麵 中山店",
       "city": "台北市",
       "district": "中山區",
-      "address": "",
+      "address": "南京西路25巷28號",
       "mrt": "中山",
       "broth_types": [
         "雞白湯"
@@ -71,44 +71,11 @@
       "badge": ""
     },
     {
-      "id": "jin-long-taipei",
-      "name": "金龍 Taipei",
-      "city": "台北市",
-      "district": "大安區",
-      "address": "",
-      "mrt": "忠孝復興",
-      "broth_types": [
-        "清湯",
-        "鹽味"
-      ],
-      "broth_detailed": [
-        "清湯",
-        "鹽味"
-      ],
-      "specialties": "山椒清湯拉麵",
-      "price_min": 330,
-      "price_max": 400,
-      "price_avg": 350,
-      "rating": 4.8,
-      "wait_time": "90分",
-      "tags": [
-        "山椒",
-        "排隊名店"
-      ],
-      "features": [
-        "山椒",
-        "排隊名店"
-      ],
-      "notes": "⚠️ 驗證報告確認查無此店。台灣無任何「金龍Taipei」拉麵店紀錄，搜尋僅導向大阪道頓堀金龍拉麵。建議移除。",
-      "source": "IG @ramen_roamers",
-      "badge": ""
-    },
-    {
       "id": "niu-bang-zhongli",
       "name": "牛浜",
       "city": "桃園市",
       "district": "中壢區",
-      "address": "",
+      "address": "新生路88號",
       "mrt": "",
       "broth_types": [
         "牛骨",
@@ -137,43 +104,10 @@
       "badge": ""
     },
     {
-      "id": "menya-itto-taiwan",
-      "name": "麵屋一燈 台灣",
-      "city": "台北市",
-      "district": "",
-      "address": "",
-      "mrt": "",
-      "broth_types": [
-        "雞白湯",
-        "魚介"
-      ],
-      "broth_detailed": [
-        "雞白湯",
-        "魚介"
-      ],
-      "specialties": "濃厚魚介雞白湯",
-      "price_min": 290,
-      "price_max": 360,
-      "price_avg": 310,
-      "rating": 4.7,
-      "wait_time": "45分",
-      "tags": [
-        "日本來台",
-        "魚介"
-      ],
-      "features": [
-        "日本來台",
-        "魚介"
-      ],
-      "notes": "",
-      "source": "台灣拉麵愛好會",
-      "badge": ""
-    },
-    {
       "id": "sheng-wang",
       "name": "勝王",
       "city": "台北市",
-      "district": "",
+      "district": "中山區",
       "address": "林森北路306號",
       "mrt": "",
       "broth_types": [
@@ -206,7 +140,7 @@
       "id": "yan-liu-taipei",
       "name": "塩琉",
       "city": "台北市",
-      "district": "",
+      "district": "中正區",
       "address": "重慶南路一段116號",
       "mrt": "",
       "broth_types": [
@@ -237,9 +171,9 @@
       "id": "menya-musashi",
       "name": "麵屋武藏 台灣",
       "city": "台北市",
-      "district": "",
-      "address": "",
-      "mrt": "",
+      "district": "中正區",
+      "address": "忠孝西路一段36號B1",
+      "mrt": "台北車站",
       "broth_types": [
         "豚骨",
         "魚介"
@@ -465,7 +399,7 @@
       "name": "らーめん七面鳥",
       "city": "台中市",
       "district": "西區",
-      "address": "",
+      "address": "中美街331巷15號",
       "mrt": "",
       "broth_types": [
         "雞白湯",
@@ -596,7 +530,7 @@
       "id": "niu-an",
       "name": "牛庵",
       "city": "台中市",
-      "district": "",
+      "district": "西屯區",
       "address": "文心路三段107-16號",
       "mrt": "",
       "broth_types": [
@@ -660,9 +594,9 @@
       "id": "shodai-hanayama",
       "name": "初代花山",
       "city": "高雄市",
-      "district": "左營區",
-      "address": "",
-      "mrt": "",
+      "district": "新興區",
+      "address": "民族二路5號",
+      "mrt": "信義國小",
       "broth_types": [
         "牛骨"
       ],
@@ -692,8 +626,8 @@
       "name": "一本拉麵",
       "city": "高雄市",
       "district": "新興區",
-      "address": "",
-      "mrt": "",
+      "address": "玉竹二街5號",
+      "mrt": "中央公園",
       "broth_types": [
         "雞白湯"
       ],
@@ -787,45 +721,12 @@
       "badge": ""
     },
     {
-      "id": "yilan-ramen",
-      "name": "宜蘭拉麵代表",
-      "city": "宜蘭縣",
-      "district": "",
-      "address": "",
-      "mrt": "",
-      "broth_types": [
-        "魚介",
-        "豚骨"
-      ],
-      "broth_detailed": [
-        "魚介",
-        "豚骨"
-      ],
-      "specialties": "鯛魚拉麵|豆乳拉麵",
-      "price_min": 260,
-      "price_max": 330,
-      "price_avg": 280,
-      "rating": 4.5,
-      "wait_time": "",
-      "tags": [
-        "宜蘭",
-        "魚介"
-      ],
-      "features": [
-        "宜蘭",
-        "魚介"
-      ],
-      "notes": "台灣拉麵愛好會推薦宜蘭必吃",
-      "source": "台灣拉麵愛好會",
-      "badge": ""
-    },
-    {
       "id": "ramen-nagi",
       "name": "Nagi豚骨拉麵凪",
       "city": "台北市",
       "district": "大安區",
-      "address": "",
-      "mrt": "",
+      "address": "漢中街52號6樓",
+      "mrt": "西門",
       "broth_types": [
         "豚骨"
       ],
@@ -851,45 +752,12 @@
       "badge": ""
     },
     {
-      "id": "takano-ramen",
-      "name": "鷹流拉麵",
-      "city": "台北市",
-      "district": "",
-      "address": "",
-      "mrt": "",
-      "broth_types": [
-        "豚骨",
-        "醬油"
-      ],
-      "broth_detailed": [
-        "豚骨",
-        "醬油"
-      ],
-      "specialties": "",
-      "price_min": 240,
-      "price_max": 310,
-      "price_avg": 260,
-      "rating": 4.6,
-      "wait_time": "20分",
-      "tags": [
-        "台灣拉麵教父",
-        "40+品牌"
-      ],
-      "features": [
-        "台灣拉麵教父",
-        "40+品牌"
-      ],
-      "notes": "叉燒花瓣擺盤始祖",
-      "source": "2023 Top85",
-      "badge": ""
-    },
-    {
       "id": "menya-sanshi",
       "name": "麵屋三士",
-      "city": "台北市",
-      "district": "",
-      "address": "",
-      "mrt": "",
+      "city": "桃園市",
+      "district": "中壢區",
+      "address": "春德路189號2樓",
+      "mrt": "高鐵桃園",
       "broth_types": [
         "雞白湯"
       ],
@@ -909,62 +777,12 @@
       "badge": ""
     },
     {
-      "id": "ramen-ji",
-      "name": "拉麵吉",
-      "city": "台北市",
-      "district": "",
-      "address": "",
-      "mrt": "",
-      "broth_types": [
-        "豚骨"
-      ],
-      "broth_detailed": [
-        "豚骨"
-      ],
-      "specialties": "",
-      "price_min": 230,
-      "price_max": 300,
-      "price_avg": 250,
-      "rating": 4.4,
-      "wait_time": "20分",
-      "tags": [],
-      "features": [],
-      "notes": "",
-      "source": "高雄四大天王",
-      "badge": ""
-    },
-    {
-      "id": "yin-jia-xinzhu",
-      "name": "隱家拉麵",
-      "city": "新竹市",
-      "district": "",
-      "address": "",
-      "mrt": "",
-      "broth_types": [
-        "雞白湯"
-      ],
-      "broth_detailed": [
-        "雞白湯"
-      ],
-      "specialties": "",
-      "price_min": 260,
-      "price_max": 330,
-      "price_avg": 280,
-      "rating": 4.5,
-      "wait_time": "20分",
-      "tags": [],
-      "features": [],
-      "notes": "",
-      "source": "2023 Top85",
-      "badge": ""
-    },
-    {
       "id": "qian-xi",
       "name": "千璽 鶏パイタン專門",
       "city": "台中市",
-      "district": "",
-      "address": "",
-      "mrt": "",
+      "district": "西屯區",
+      "address": "文心路三段66號",
+      "mrt": "文華高中",
       "broth_types": [
         "雞白湯"
       ],
@@ -987,8 +805,8 @@
       "id": "kitaho",
       "name": "Kitaho 北穗製麵所",
       "city": "台中市",
-      "district": "",
-      "address": "",
+      "district": "西區",
+      "address": "公益路124巷2號",
       "mrt": "",
       "broth_types": [
         "豚骨",
@@ -1014,8 +832,8 @@
       "id": "menya-seiryu",
       "name": "麵屋清流",
       "city": "台中市",
-      "district": "",
-      "address": "",
+      "district": "西區",
+      "address": "臺灣大道二段48號",
       "mrt": "",
       "broth_types": [
         "魚介",
@@ -1041,8 +859,8 @@
       "id": "akakuma-ramen",
       "name": "赤熊拉麵",
       "city": "台中市",
-      "district": "",
-      "address": "",
+      "district": "西屯區",
+      "address": "河南路二段432之1號",
       "mrt": "",
       "broth_types": [
         "豚骨",
@@ -1062,114 +880,6 @@
       "features": [],
       "notes": "台中人氣拉麵店",
       "source": "台灣拉麵協會",
-      "badge": ""
-    },
-    {
-      "id": "da-wang-beetle",
-      "name": "大王具足蟲拉麵",
-      "city": "高雄市",
-      "district": "",
-      "address": "",
-      "mrt": "",
-      "broth_types": [
-        "創意"
-      ],
-      "broth_detailed": [
-        "創意"
-      ],
-      "specialties": "",
-      "price_min": 330,
-      "price_max": 400,
-      "price_avg": 350,
-      "rating": 4.2,
-      "wait_time": "20分",
-      "tags": [
-        "話題",
-        "具足蟲"
-      ],
-      "features": [
-        "話題",
-        "具足蟲"
-      ],
-      "notes": "曾攻佔版面",
-      "source": "2023 Top85",
-      "badge": ""
-    },
-    {
-      "id": "taoyuan-shops",
-      "name": "桃園拉麵群",
-      "city": "桃園市",
-      "district": "",
-      "address": "",
-      "mrt": "",
-      "broth_types": [
-        "多元"
-      ],
-      "broth_detailed": [
-        "多元"
-      ],
-      "specialties": "",
-      "price_min": 240,
-      "price_max": 310,
-      "price_avg": 260,
-      "rating": 4.3,
-      "wait_time": "20分",
-      "tags": [],
-      "features": [],
-      "notes": "中壢、桃園區多家",
-      "source": "台灣拉麵地圖",
-      "badge": ""
-    },
-    {
-      "id": "tainan-shops",
-      "name": "台南拉麵群",
-      "city": "台南市",
-      "district": "",
-      "address": "",
-      "mrt": "",
-      "broth_types": [
-        "豚骨",
-        "雞白"
-      ],
-      "broth_detailed": [
-        "豚骨",
-        "雞白"
-      ],
-      "specialties": "",
-      "price_min": 230,
-      "price_max": 300,
-      "price_avg": 250,
-      "rating": 4.3,
-      "wait_time": "20分",
-      "tags": [],
-      "features": [],
-      "notes": "",
-      "source": "台灣拉麵地圖",
-      "badge": ""
-    },
-    {
-      "id": "hsinchu-shops",
-      "name": "新竹拉麵群",
-      "city": "新竹市",
-      "district": "",
-      "address": "",
-      "mrt": "",
-      "broth_types": [
-        "多元"
-      ],
-      "broth_detailed": [
-        "多元"
-      ],
-      "specialties": "",
-      "price_min": 250,
-      "price_max": 320,
-      "price_avg": 270,
-      "rating": 4.4,
-      "wait_time": "20分",
-      "tags": [],
-      "features": [],
-      "notes": "",
-      "source": "台灣拉麵地圖",
       "badge": ""
     },
     {
@@ -1826,8 +1536,8 @@
       "id": "lijiang-ramen",
       "name": "狸匠拉麵 深夜拉麵",
       "city": "台中市",
-      "district": "",
-      "address": "",
+      "district": "南區",
+      "address": "興大路90號",
       "mrt": "—",
       "broth_types": [
         "多元"
@@ -1858,7 +1568,7 @@
       "name": "山下公園",
       "city": "台中市",
       "district": "西區",
-      "address": "",
+      "address": "健行路1049號3F",
       "mrt": "—",
       "broth_types": [
         "雞白湯"
@@ -1918,37 +1628,6 @@
       "badge": ""
     },
     {
-      "id": "yamashita-taipei",
-      "name": "山下公園 台北",
-      "city": "台北市",
-      "district": "",
-      "address": "",
-      "mrt": "—",
-      "broth_types": [
-        "雞白湯"
-      ],
-      "broth_detailed": [
-        "雞白湯"
-      ],
-      "specialties": "泡系白湯",
-      "price_min": 270,
-      "price_max": 340,
-      "price_avg": 290,
-      "rating": 4.6,
-      "wait_time": "30分",
-      "tags": [
-        "金賞",
-        "泡系"
-      ],
-      "features": [
-        "金賞",
-        "泡系"
-      ],
-      "notes": "開幕以泡系白湯打響知名度。本土雞鴨熬製白湯，真昆布煮干清湯",
-      "source": "自由時報玩咖 2023 Top10",
-      "badge": "⭐ 金賞"
-    },
-    {
       "id": "kichikichi",
       "name": "雞吉君拉麵 西門店",
       "city": "台北市",
@@ -1985,7 +1664,7 @@
       "id": "donzan-ramen",
       "name": "吞山郎 二郎風拉麵",
       "city": "台中市",
-      "district": "",
+      "district": "西屯區",
       "address": "牛庵隔壁",
       "mrt": "—",
       "broth_types": [
@@ -2050,39 +1729,6 @@
       "badge": ""
     },
     {
-      "id": "一樂拉麵-信義旗艦店",
-      "name": "一樂拉麵 信義旗艦店",
-      "city": "台北市",
-      "district": "信義區",
-      "address": "",
-      "mrt": "市政府",
-      "broth_types": [
-        "豚骨",
-        "醬油"
-      ],
-      "broth_detailed": [
-        "豚骨",
-        "醬油"
-      ],
-      "specialties": "火影忍者官方拉麵",
-      "price_min": 310,
-      "price_max": 380,
-      "price_avg": 330,
-      "rating": 4.2,
-      "wait_time": "40分",
-      "tags": [
-        "火影忍者",
-        "IP聯名"
-      ],
-      "features": [
-        "火影忍者",
-        "IP聯名"
-      ],
-      "notes": "",
-      "source": "mian-hun merged",
-      "badge": ""
-    },
-    {
       "id": "tokunooya",
       "name": "特濃屋",
       "city": "台北市",
@@ -2142,31 +1788,6 @@
       ],
       "notes": "190元起免費續麵一次，客製化麵條與口味",
       "source": "dalang.tw 2026平價拉麵",
-      "badge": ""
-    },
-    {
-      "id": "king-ramen-kh",
-      "name": "大王拉麵",
-      "city": "高雄市",
-      "district": "",
-      "address": "",
-      "mrt": "—",
-      "broth_types": [
-        "豚骨"
-      ],
-      "broth_detailed": [
-        "豚骨"
-      ],
-      "specialties": "豚骨拉麵",
-      "price_min": 230,
-      "price_max": 300,
-      "price_avg": 250,
-      "rating": 4.4,
-      "wait_time": "15分",
-      "tags": [],
-      "features": [],
-      "notes": "高雄豚骨拉麵",
-      "source": "台灣拉麵愛好會",
       "badge": ""
     },
     {
@@ -2301,8 +1922,8 @@
       "id": "bailu-ramen",
       "name": "白露拉麵 Bailu Ramen",
       "city": "台南市",
-      "district": "",
-      "address": "",
+      "district": "中西區",
+      "address": "城隍街50號",
       "mrt": "",
       "broth_types": [
         "雞白湯"
@@ -2459,7 +2080,7 @@
       "name": "Hiro\\",
       "city": "新竹市",
       "district": "東區",
-      "address": "",
+      "address": "長安街76號",
       "mrt": "",
       "broth_types": [
         "豚骨",
@@ -2586,8 +2207,8 @@
       "id": "rante-ramen",
       "name": "嵐沺拉麵",
       "city": "新竹市",
-      "district": "",
-      "address": "郵政總局附近",
+      "district": "東區",
+      "address": "南門街77號",
       "mrt": "",
       "broth_types": [
         "豚骨",
@@ -2853,7 +2474,7 @@
       "name": "菜良日式拉麵",
       "city": "台南市",
       "district": "東區",
-      "address": "",
+      "address": "崇明路42號",
       "mrt": "",
       "broth_types": [
         "豚骨醬油",
@@ -2879,41 +2500,6 @@
       ],
       "notes": "台南少有的二郎系拉麵專賣店。大份量蔬菜+滿滿叉燒",
       "source": "妳好南搞台南拉麵5間",
-      "badge": ""
-    },
-    {
-      "id": "xinxin-kaohsiung",
-      "name": "山形心心拉麵 高雄店",
-      "city": "高雄市",
-      "district": "",
-      "address": "",
-      "mrt": "",
-      "broth_types": [
-        "醬油",
-        "鹽味",
-        "味噌"
-      ],
-      "broth_detailed": [
-        "醬油",
-        "鹽味",
-        "味噌"
-      ],
-      "specialties": "山形辛味噌拉麵|二郎系男氣拉麵",
-      "price_min": 200,
-      "price_max": 270,
-      "price_avg": 220,
-      "rating": 4.3,
-      "wait_time": "15分",
-      "tags": [
-        "日本師傅",
-        "平價"
-      ],
-      "features": [
-        "日本師傅",
-        "平價"
-      ],
-      "notes": "日本師傅親自掌廚，自家製麵條。台北/台中/高雄皆有",
-      "source": "Klook 2026",
       "badge": ""
     },
     {
@@ -3343,8 +2929,8 @@
       "id": "ippudo-taoyuan",
       "name": "一風堂 桃園店",
       "city": "桃園市",
-      "district": "桃園區",
-      "address": "",
+      "district": "中壢區",
+      "address": "高鐵北路一段6號",
       "mrt": "—",
       "broth_types": [
         "豚骨"
@@ -3558,37 +3144,6 @@
       ],
       "notes": "確認存在且營業中。2021/11/24開幕，為台灣第二家分店。座位41席，營業時間10:00至翌日01:30。天然豚骨拉麵310元。",
       "source": "trip.com 2026台北拉麵",
-      "badge": ""
-    },
-    {
-      "id": "hokusui-ramen",
-      "name": "北穗製麵所",
-      "city": "台中市",
-      "district": "",
-      "address": "",
-      "mrt": "—",
-      "broth_types": [
-        "豚骨",
-        "醬油"
-      ],
-      "broth_detailed": [
-        "豚骨",
-        "醬油"
-      ],
-      "specialties": "自家製麵",
-      "price_min": 230,
-      "price_max": 300,
-      "price_avg": 250,
-      "rating": 4.4,
-      "wait_time": "15分",
-      "tags": [
-        "自家製麵"
-      ],
-      "features": [
-        "自家製麵"
-      ],
-      "notes": "自家製麵所，堅持手工製麵",
-      "source": "台灣拉麵協會",
       "badge": ""
     },
     {
@@ -5341,8 +4896,8 @@
       "id": "pool-yin-ramen",
       "name": "池音 鶏白湯ラーメン",
       "city": "台北市",
-      "district": "內湖區",
-      "address": "八德路三段",
+      "district": "大同區",
+      "address": "赤峰街23巷25號",
       "mrt": "—",
       "broth_types": [
         "雞白湯"
@@ -5598,41 +5153,6 @@
       "notes": "確認營業中。2024/9/7試營運。主打雞白湯拉麵，提供鶴立雞白湯、鹽味雞湯、醬油雞湯三種口味，價格約280-360元。文青木質裝潢，採點餐機自助點餐。",
       "source": "jeremyfoodie.tw; hellokids.tw",
       "badge": "🆕 新店"
-    },
-    {
-      "id": "梨橙溫泉拉麵",
-      "name": "梨橙溫泉拉麵",
-      "city": "台北市",
-      "district": "大安區",
-      "address": "",
-      "mrt": "忠孝敦化",
-      "broth_types": [
-        "酸菜魚",
-        "螺螄粉",
-        "麻辣"
-      ],
-      "broth_detailed": [
-        "酸菜魚",
-        "螺螄粉",
-        "麻辣"
-      ],
-      "specialties": "重慶酸菜魚拉麵|柳州螺螄粉拉麵",
-      "price_min": 230,
-      "price_max": 300,
-      "price_avg": 250,
-      "rating": 4.2,
-      "wait_time": "15分",
-      "tags": [
-        "水豚主題",
-        "深夜凌晨3點"
-      ],
-      "features": [
-        "水豚主題",
-        "深夜凌晨3點"
-      ],
-      "notes": "",
-      "source": "mian-hun merged",
-      "badge": ""
     },
     {
       "id": "teichiba-taipei",
@@ -6767,7 +6287,7 @@
       "name": "麵屋榊(拉麵壹3號店)",
       "city": "高雄市",
       "district": "鳳山區",
-      "address": "文山特區/陽明商圈",
+      "address": "文山特區",
       "mrt": "—",
       "broth_types": [
         "雞白湯",
@@ -6825,39 +6345,6 @@
       "notes": "前麵屋牛一店主新開，Google 4.9超高分。免費加半球麵兩次及白飯，僅收現金",
       "source": "mymarcy.tw; Google Maps",
       "badge": ""
-    },
-    {
-      "id": "uosakae-banqiao",
-      "name": "拉麵魚堺 板橋府中店",
-      "city": "新北市",
-      "district": "板橋區",
-      "address": "府中站步行10分",
-      "mrt": "府中",
-      "broth_types": [
-        "醬油",
-        "雞白湯"
-      ],
-      "broth_detailed": [
-        "醬油",
-        "雞白湯"
-      ],
-      "specialties": "醬油拉麵|鹽味拉麵",
-      "price_min": 180,
-      "price_max": 250,
-      "price_avg": 200,
-      "rating": 4.4,
-      "wait_time": "20分",
-      "tags": [
-        "2024/12開幕",
-        "屋台風格"
-      ],
-      "features": [
-        "2024/12開幕",
-        "屋台風格"
-      ],
-      "notes": "2024/12開幕，但目前IG未列出，可能已歇業。屋台風格，四款轉味調味料，點餐機點餐。$170起超平價",
-      "source": "Nash's Wonderland pixnet",
-      "badge": "🆕 新店"
     },
     {
       "id": "kurami-zhonghe",
@@ -7311,229 +6798,6 @@
       ],
       "notes": "大量蔬果+全雞+豬骨長時間熬煮，4種風味變化，愛吃肉可選特盛款附炙燒肋排",
       "source": "jas38.tw",
-      "badge": ""
-    },
-    {
-      "id": "麵屋千雲",
-      "name": "麵屋千雲",
-      "city": "台北市",
-      "district": "中山區",
-      "address": "",
-      "mrt": "中山",
-      "broth_types": [
-        "雞白湯"
-      ],
-      "broth_detailed": [
-        "雞白湯"
-      ],
-      "specialties": "濃厚雞白湯拉麵",
-      "price_min": 230,
-      "price_max": 300,
-      "price_avg": 250,
-      "rating": 4.5,
-      "wait_time": "40分",
-      "tags": [
-        "深夜營業",
-        "中山名店"
-      ],
-      "features": [
-        "深夜營業",
-        "中山名店"
-      ],
-      "notes": "",
-      "source": "mian-hun merged",
-      "badge": ""
-    },
-    {
-      "id": "柑橘-shinn",
-      "name": "柑橘 Shinn",
-      "city": "台北市",
-      "district": "大安區",
-      "address": "",
-      "mrt": "信義安和",
-      "broth_types": [
-        "雞白湯",
-        "果香"
-      ],
-      "broth_detailed": [
-        "雞白湯",
-        "果香"
-      ],
-      "specialties": "柑橘雞白湯拉麵",
-      "price_min": 240,
-      "price_max": 310,
-      "price_avg": 260,
-      "rating": 4.4,
-      "wait_time": "60分",
-      "tags": [
-        "清爽果香",
-        "網美愛店"
-      ],
-      "features": [
-        "清爽果香",
-        "網美愛店"
-      ],
-      "notes": "",
-      "source": "mian-hun merged",
-      "badge": ""
-    },
-    {
-      "id": "辣麻味噌拉麵-鬼金棒",
-      "name": "辣麻味噌拉麵 鬼金棒",
-      "city": "台北市",
-      "district": "中山區",
-      "address": "",
-      "mrt": "中山",
-      "broth_types": [
-        "味噌"
-      ],
-      "broth_detailed": [
-        "味噌"
-      ],
-      "specialties": "辣麻味噌拉麵",
-      "price_min": 260,
-      "price_max": 330,
-      "price_avg": 280,
-      "rating": 4.6,
-      "wait_time": "50分",
-      "tags": [
-        "重口味",
-        "金賞"
-      ],
-      "features": [
-        "重口味",
-        "金賞"
-      ],
-      "notes": "",
-      "source": "mian-hun merged",
-      "badge": ""
-    },
-    {
-      "id": "nagi-豚骨拉麵-凪",
-      "name": "Nagi 豚骨拉麵 凪",
-      "city": "台北市",
-      "district": "萬華區",
-      "address": "",
-      "mrt": "西門",
-      "broth_types": [
-        "豚骨"
-      ],
-      "broth_detailed": [
-        "豚骨"
-      ],
-      "specialties": "豚王原味拉麵|赤王辛辣",
-      "price_min": 230,
-      "price_max": 300,
-      "price_avg": 250,
-      "rating": 4.3,
-      "wait_time": "免排隊",
-      "tags": [
-        "客製化",
-        "日系連鎖"
-      ],
-      "features": [
-        "客製化",
-        "日系連鎖"
-      ],
-      "notes": "",
-      "source": "mian-hun merged",
-      "badge": ""
-    },
-    {
-      "id": "無口小廚",
-      "name": "無口小廚",
-      "city": "台北市",
-      "district": "大同區",
-      "address": "",
-      "mrt": "大橋頭",
-      "broth_types": [
-        "野菜",
-        "創作"
-      ],
-      "broth_detailed": [
-        "野菜",
-        "創作"
-      ],
-      "specialties": "燕麥奶拉麵",
-      "price_min": 240,
-      "price_max": 310,
-      "price_avg": 260,
-      "rating": 4.7,
-      "wait_time": "30分",
-      "tags": [
-        "素食友善",
-        "燕麥奶"
-      ],
-      "features": [
-        "素食友善",
-        "燕麥奶"
-      ],
-      "notes": "",
-      "source": "mian-hun merged",
-      "badge": ""
-    },
-    {
-      "id": "真劍拉麵",
-      "name": "真劍拉麵",
-      "city": "台北市",
-      "district": "大安區",
-      "address": "",
-      "mrt": "台電大樓",
-      "broth_types": [
-        "鹽味",
-        "雞清湯"
-      ],
-      "broth_detailed": [
-        "鹽味",
-        "雞清湯"
-      ],
-      "specialties": "鹽味翠雞拉麵",
-      "price_min": 240,
-      "price_max": 310,
-      "price_avg": 260,
-      "rating": 4.3,
-      "wait_time": "45分",
-      "tags": [
-        "藍色湯頭",
-        "深夜"
-      ],
-      "features": [
-        "藍色湯頭",
-        "深夜"
-      ],
-      "notes": "",
-      "source": "mian-hun merged",
-      "badge": ""
-    },
-    {
-      "id": "道樂屋台",
-      "name": "道樂屋台",
-      "city": "台北市",
-      "district": "士林區",
-      "address": "",
-      "mrt": "劍潭",
-      "broth_types": [
-        "豚骨"
-      ],
-      "broth_detailed": [
-        "豚骨"
-      ],
-      "specialties": "豪華豚骨拉麵",
-      "price_min": 180,
-      "price_max": 250,
-      "price_avg": 200,
-      "rating": 4.5,
-      "wait_time": "30分",
-      "tags": [
-        "屋台風格",
-        "高CP值"
-      ],
-      "features": [
-        "屋台風格",
-        "高CP值"
-      ],
-      "notes": "",
-      "source": "mian-hun merged",
       "badge": ""
     }
   ]
