@@ -1,7 +1,9 @@
 # 🍜 麵魂 MIAN-HUN — 台灣拉麵 AI Skill
 
-> **The universal Taiwan ramen skill for every LLM.**
-> 全台最完整的開源拉麵推薦引擎 — 跨平台 AI 拉麵助手
+> **The universal Taiwan ramen skill for every LLM.**。
+> 全台最完整的開源拉麵推薦引擎 — 跨平台 AI 拉麵助手  
+
+[網頁版](https://eric-lam.com/mian-hun/website/index.html)
 
 [![agentskills.io](https://img.shields.io/badge/agentskills.io-compatible-blue)](https://agentskills.io)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](LICENSE)
@@ -15,7 +17,7 @@
 
 ### Hermes Agent
 ```bash
-hermes skills install your-username/mian-hun
+hermes skills install voidful/mian-hun
 ```
 
 ### Claude (Claude Code / Claude.ai)
