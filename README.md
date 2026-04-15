@@ -5,9 +5,9 @@
 
 [![agentskills.io](https://img.shields.io/badge/agentskills.io-compatible-blue)](https://agentskills.io)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](LICENSE)
-[![Shops](https://img.shields.io/badge/shops-1304+-D94F30)]()
-[![Last Updated](https://img.shields.io/badge/updated-2026--04--15-green)]()
-[![Version](https://img.shields.io/badge/version-5.2--verified-blue)]()
+![Shops](https://img.shields.io/badge/shops-1304+-D94F30)
+![Last Updated](https://img.shields.io/badge/updated-2026--04--15-green)
+![Version](https://img.shields.io/badge/version-5.2--verified-blue)
 
 ---
 

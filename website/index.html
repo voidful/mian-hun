@@ -718,32 +718,32 @@ function filt(){
 
 function render(){
   const f=filt(),shown=f.slice(0,show);
-  document.getElementById('shopCount').textContent=`找到 ${f.length} 家${sq?' (搜尋: '+sq+')':''}，顯示 ${Math.min(show,f.length)} 家`;
-  document.getElementById('shopGrid').innerHTML=shown.map((s,i)=>`
+  document.getElementById('cnt').textContent=`找到 ${f.length} 家${sq?' (搜尋: '+sq+')':''}，顯示 ${Math.min(show,f.length)} 家`;
+  document.getElementById('grid').innerHTML=shown.map((s,i)=>`
     <div class="sc" style="animation:cardUp .45s ${i*.03}s both">
       ${s.bg?`<div class="sc-badge">${s.bg}</div>`:''}
-      <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:8px">
-        <div class="sc-name">${s.n}</div>
-        <div class="sc-rate">★ ${s.r}</div>
+      <div class="sc-h">
+        <div class="sc-n">${s.n}</div>
+        <div class="sc-r">${s.r}</div>
       </div>
       <div class="sc-loc">📍 ${s.c}${s.d?' '+s.d:''}${s.m&&s.m!=='—'&&s.m!==''?' ｜ 🚇 '+s.m:''}</div>
-      <div class="sc-tags">${s.b.map(b=>`<span class="tag">${b}</span>`).join('')}${s.t.slice(0,2).map(t=>`<span class="tag tg">${t}</span>`).join('')}</div>
-      <div class="sc-info">
-        <div><span class="sc-lbl">均價</span>$${s.p}</div>
-        <div><span class="sc-lbl">等候</span>${s.w||'—'}</div>
+      <div class="sc-tags">${s.b.map(b=>`<span class="tag">${b}</span>`).join('')}${s.t.slice(0,2).map(t=>`<span class="tag tag-g">${t}</span>`).join('')}</div>
+      <div class="sc-det">
+        <div><span class="sc-dl">均價</span> $${s.p}</div>
+        <div><span class="sc-dl">等候</span> ${s.w||'—'}</div>
       </div>
-      ${s.s?`<div class="sc-spec"><span class="sc-lbl">招牌</span>${s.s.replace('|',' · ')}</div>`:''}
+      ${s.s?`<div class="sc-det" style="margin-top:6px;grid-template-columns:1fr"><div><span class="sc-dl">招牌</span> ${s.s.replace(/\|/g,' · ')}</div></div>`:''}
     </div>`).join('');
-  const btn=document.getElementById('loadMore');
+  const btn=document.getElementById('lm');
   if(btn)btn.style.display=show<f.length?'block':'none';
 }
 
-document.getElementById('cityF').addEventListener('click',e=>{if(!e.target.matches('.fb'))return;document.querySelectorAll('#cityF .fb').forEach(b=>b.classList.remove('on'));e.target.classList.add('on');cc=e.target.dataset.v;show=15;render()});
-document.getElementById('brothF').addEventListener('click',e=>{if(!e.target.matches('.fb'))return;document.querySelectorAll('#brothF .fb').forEach(b=>b.classList.remove('on'));e.target.classList.add('on');cb=e.target.dataset.v;show=15;render()});
+document.getElementById('cf').addEventListener('click',e=>{if(!e.target.matches('.fb'))return;document.querySelectorAll('#cf .fb').forEach(b=>b.classList.remove('act'));e.target.classList.add('act');cc=e.target.dataset.c;show=15;render()});
+document.getElementById('bf').addEventListener('click',e=>{if(!e.target.matches('.fb'))return;document.querySelectorAll('#bf .fb').forEach(b=>b.classList.remove('act'));e.target.classList.add('act');cb=e.target.dataset.b;show=15;render()});
 let debounce;
-document.getElementById('searchInput').addEventListener('input',e=>{clearTimeout(debounce);debounce=setTimeout(()=>{sq=e.target.value.trim();show=15;render()},200)});
-const lm=document.getElementById('loadMore');
-if(lm)lm.addEventListener('click',()=>{show+=15;render()});
+document.getElementById('si').addEventListener('input',e=>{clearTimeout(debounce);debounce=setTimeout(()=>{sq=e.target.value.trim();show=15;render()},200)});
+const lmBtn=document.getElementById('lm');
+if(lmBtn)lmBtn.addEventListener('click',()=>{show+=15;render()});
 
 const st=document.createElement('style');
 st.textContent='@keyframes cardUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:none}}';
